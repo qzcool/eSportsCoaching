@@ -5,5 +5,5 @@ www.gamersensei.com 中国版
 
 开发者：
 张乔
-曲晓雅
+曲晓雅 女
 魏帅
