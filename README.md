@@ -1,5 +1,4 @@
 # eSportsCoachingWebsite
-www.gamersensei.com 中国版
 
 帮助游戏爱好者新手找到大师来辅导自己！
 
