@@ -1,0 +1,34 @@
+.list-top{
+    padding: 10px 20px;
+    margin: 20px 0 30px;
+    border:1px solid #e3e3e4;
+}
+.nober> div select{
+    border: none;
+}
+
+.list-center {
+    border: 1px solid #e3e3e4;
+    background:#fafafb;
+    text-align: center;
+    padding: 40px 30px 40px;
+}
+.imgbutton {
+    padding: 10px 20px;
+    border:1px solid #73c83c;
+    border-radius: 20px;
+    background: #73c83c;
+    color: #f7fbf5;
+}
+
+/*下面这个是myreiews的样式*/
+.im-color{
+    color:#73c83c;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*这是GetFreeLessons style*/
+
+.imge { margin: 20px auto; }
+.get-p-color{ color:#333; }

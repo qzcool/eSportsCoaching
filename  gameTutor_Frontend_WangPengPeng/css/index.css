@@ -1,0 +1,90 @@
+body {padding-top:51px; }
+.m-t-15 { margin-top: 9px; }
+/*.m-b-n{
+    margin-bottom:0;
+}*/
+
+/*这个是重复的右边的代码*/
+.index-left ul,.index-left p {
+    border-top: 1px solid #264959;
+    border-bottom: 1px solid #264959;
+    margin-bottom: 0;
+}
+.index-left p {
+    padding: 10px 0 10px 15px;
+}
+.index-left li {
+    list-style: none;
+    padding: 9px 0;
+}
+.index-left li h4{
+    margin: 0;
+    color: #85bac5;
+    display: inline-block;
+    margin-left: 5px;
+}
+.index-left li a,.index-left p a {
+    text-decoration: none;
+    color: #bdc4c8;
+}
+.index-left {
+    background: #183b4c;
+    padding: 20px 0 20px 0;
+}
+.ulfirst { margin-left: -26px; }
+
+.index-left span {
+    color: #fff;
+    padding-right: 17px;
+}
+
+/*这个是重复的右边的代码*/
+
+.right-box > p {
+    margin-top: 30px;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+.right-center {
+    padding: 20px 40px;
+}
+.right-box{
+    margin-top: 20px;
+    padding: 2%;
+    background:#fff;
+    border:1px solid #eeeeef;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+
+.bg-img{
+    /*在这里写入背景图*/
+    background: url(..) no-repeat;
+}
+
+
+
+.inputradio input {
+    border:1px solid #70c737;
+    border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -webkit-border-radius: 20px !important
+}
+.right-box button {
+    padding: 10px 20px;
+    border:1px solid #73c83c;
+    border-radius: 20px;
+    background: #73c83c;
+    color: #f7fbf5;
+}
+.p-t-26 div{
+    padding-top: 26%;
+}
+.p-t-26 div{
+    padding-top: 10%;
+}
