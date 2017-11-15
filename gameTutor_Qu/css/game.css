@@ -76,6 +76,13 @@ form{
   display:block;
   top:250px;
 }
+.searchButton{
+  width:200px;
+  height:70px;
+  font-size:35px;
+  text-align:center;
+  margin:30px 5px;
+}
 .selectYourGame{
   border:none;
   /*appearance:none;

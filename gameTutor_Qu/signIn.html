@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>游戏先生</title>
+  <style type="text/css">
+  </style>
+  <link rel="stylesheet" href="css/game.css" type="text/css"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script language="JavaScript" src="js/game.js"></script>
+</head>
+<body>
+  <div align="center">
+    <div id="header" class="container-fluid">
+        <div class="nav-left"><div class="gameLogo"></div></div>
+        <div class="nav-right">
+            <ul id="menu">
+                <li><a href=''>博客</a></li>
+                <li><a href='signIn.html'>登录</a></li>
+                <li><a>注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gameContent">
+  <input type="email" placeholder="电子邮件地址" id="userName" required>
+  <br>
+  <input type="password" placeholder="密码" id="userPwd" required>
+  <br>
+  <button type="submit" onclick="checkUserInfo()">登陆</button>
+  <button type="submit">注册</button>
+  <br>
+  <p>想要上课？快来成为学员</p>
+  <button type="submit">学员申请</button>
+</div>
+  </div>
+</body>
+</html>
