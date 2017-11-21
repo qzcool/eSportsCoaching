@@ -1,4 +1,4 @@
-var gameNameOptions=["王者荣耀","英雄联盟"];
+var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
 var users=[{
   name:"qxy",
   pwd:"123456"
@@ -33,13 +33,24 @@ function signUpUser(){
 }
 /*add optional games*/
 function addOptionsForSelect(){
-    var gameOptional=document.getElementById("gameOptional");
-    if(!gameOptional){return;}
+    var gameOptional = document.getElementById("gameOptional");
+    var gameShow = document.getElementById("gameShow");
+    if (!gameOptional || !gameShow){return;}
     for(var i=0; i< gameNameOptions.length; i++){
-      var option=document.createElement("option");
-      option.innerHTML=gameNameOptions[i];
-      gameOptional.appendChild(option);
+        var option=document.createElement("option");
+        option.innerHTML=gameNameOptions[i];
+        gameOptional.appendChild(option);
+        var gamesDiv = document.createElement("div");
+        gamesDiv.classList.add("pDisplayInline", "img_index");
+        gameShow.appendChild(gamesDiv);
+        var img = document.createElement("img");   
+        img.src = "images/game" + i + ".png";
+        img.classList.add("img-responsive");
+        gamesDiv.appendChild(img);
+      
     }
+    
+
 }
 addOptionsForSelect();
 

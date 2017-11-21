@@ -140,6 +140,10 @@ form{
 .calender-button{
   float:right;
 }
+.img_index{
+  width:30%;
+  height:150px;
+}
 .canlender-header{
   margin:0 auto;
   background-color: #183b4c;
