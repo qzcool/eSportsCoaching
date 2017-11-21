@@ -12,28 +12,25 @@
 </head >
 <body >
     <div align="center">
-        <div id="header" class="container-fluid">
-            <div class="nav-left"><div class="gameLogo"></div></div>
-            <div class="nav-right">
-                <ul id="menu">
-                    <li><a href=''>博客</a></li>
-                    <li><a href='signIn.html'>登录</a></li>
-                    <li><a>游客进入</a></li>  <!--游客登陆应该是默认的状态，不需要专门显示一个按钮在页面上-->
-                </ul>
+      <nav class="navbar navbar-default navbar-fixed-top m-b-n">
+        <div class="container-fluid">
+            <div>
+                <div class="gameLogo"></div>
+            </div>
+            <div class="navbar-right input-group">
+              <ul id="menu">
+                  <li><a href=''>博客</a></li>
+                  <li><a href='signIn.html'>登录</a></li>
+                  <li><a>游客进入</a></li>
+              </ul>
             </div>
         </div>
-        <div class="gameContent">
+      </nav>
+      <div class="col-xs-12 gameContent padding-index">
             <selection class="selection-wrap align-center">
                 <h1 class="hero-header">来提升你的技能吧！</h1>
                 <h2 class="hero-select"><p class='pDisplayInline'>我想提升</p>
-<<<<<<< HEAD
-                  <select class="selectYourGame">
-                    <option>王者荣耀</option>
-                    <option>英雄联盟</option>
-                    <option>绝地求生</option>
-=======
                   <select class="selectYourGame" id="gameOptional">
->>>>>>> e2de6d39a38e9177e156d425232242415bbaa536
                   </select>
                 </h2>
                 <div><button type="button" class="searchButton">寻找教练</button>

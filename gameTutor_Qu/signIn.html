@@ -9,31 +9,42 @@
   </style>
   <link rel="stylesheet" href="css/game.css" type="text/css"/>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script language="JavaScript" src="js/game.js"></script>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
   <div align="center">
-    <div id="header" class="container-fluid">
-        <div class="nav-left"><div class="gameLogo"></div></div>
-        <div class="nav-right">
+    <nav class="navbar navbar-default navbar-fixed-top m-b-n">
+      <div class="container-fluid">
+          <div>
+              <div class="gameLogo"></div>
+          </div>
+          <div class="navbar-right input-group">
             <ul id="menu">
                 <li><a href=''>博客</a></li>
                 <li><a href='signIn.html'>登录</a></li>
-                <li><a>注册</a></li>
+                <li><a>游客进入</a></li>
             </ul>
+          </div>
+      </div>
+    </nav>
+    <div class="col-xs-7 col-xs-offset-2 gameContent padding-index">
+      <h1 id="applyToBe"></h1>
+      <form class="selectionInfo">
+          <div class="input-selection">
+          <input type="email" class="input-index-user" placeholder="电子邮件地址" id="userName" required>
+          <input type="password" class="input-index-user" placeholder="密码" id="userPwd" required>
+          <span class="forgotSecret">忘记密码</span>
         </div>
-    </div>
-    <div class="gameContent">
-  <input type="email" placeholder="电子邮件地址" id="userName" required>
-  <br>
-  <input type="password" placeholder="密码" id="userPwd" required>
-  <br>
-  <button type="submit" onclick="checkUserInfo()">登陆</button>
-  <button type="submit" onclick="signUpUser()">注册</button>
-  <br>
-  <p>想要上课？快来成为学员</p>
-  <button type="submit">学员申请</button>
-</div>
+        <button class="button-signIn" onclick="checkUserInfo()">登录</button>
+      <!-- <button type="submit" onclick="checkUserInfo()">登陆</button>
+      <button type="submit" onclick="signUpUser()">注册</button> -->
+
+      <br>
+    </form>
+    <p class="signIn-p">你还没有帐号，申请成为<a href="signUp.html">学员</a><br>申请成为<a a href="signUp.html">先生</a></p>
+   </div>
   </div>
+  <script language="JavaScript" src="js/game.js"></script>
 </body>
 </html>
