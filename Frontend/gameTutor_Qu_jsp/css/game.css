@@ -140,6 +140,10 @@ form{
 .calender-button{
   float:right;
 }
+.img_index{
+  width:30%;
+  height:150px;
+}
 .canlender-header{
   margin:0 auto;
   background-color: #183b4c;
@@ -298,12 +302,27 @@ form{
    border:1px solid #e3e3e4;
    border-radius:5px;
 }
-.profile-input-introduce{
-  float:left;
-  width:100%;
-  height:115px;
-  border:1px solid #e3e3e4;
-  border-radius:5px;
+.sensei-achievement-input {
+    border:none;
+    height:33px;
+    float:left;
+    width:77%;
+}
+.sensei-achievement-btn {
+    float: right;
+    border-radius: 10px;
+    border: 1px solid rgba(43, 222, 79, 0.98);
+    height: 25px;
+    width: 20%;
+    background-color: white;
+    margin:4px 2px;
+} 
+.profile-input-introduce {
+    float: left;
+    width: 100%;
+    height: 115px;
+    border: 1px solid #e3e3e4;
+    border-radius: 5px;
 }
 .profile-input-introduce-box{
   height:150px;
@@ -325,8 +344,15 @@ label{
 li{
    list-style-type:none;
 }
+
+.sensei-text{
+    color:white;
+}
 #menu li{
     float:left;
+}
+.fa-star{
+    color:aqua;
 }
 #menu li a{
     display:block;
