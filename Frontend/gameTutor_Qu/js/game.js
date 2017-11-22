@@ -1,9 +1,13 @@
 var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
-var users=[{
-  name:"qxy",
-  pwd:"123456"
-}]
-
+var users = [{
+    name: "qxy",
+    pwd: "123456",
+    type: "STU"
+}, {
+    name: "yaya",
+    pwd: "123456",
+    type: "SEN"
+}];
 
 
 /*check user name and user password in sign in*/
@@ -17,8 +21,12 @@ function checkUserInfo(){
     for(var i=0; i<users.length; i++){
       if(users[i].name===userText){
           if(pwdText === users[i].pwd){
-             alert("登录成功");
-             window.location.href="gamer/profile.html";
+              alert("登录成功");
+              if (users[i].type === "STU") {
+                  window.location.href = "gamer/profile.html";
+              } else if (users[i].type === "SEN") {
+                  window.location.href = "sensei/profile.html";
+              }
           }else{
              alert("用户名或密码错误");
           }

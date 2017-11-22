@@ -329,8 +329,15 @@ label{
 li{
    list-style-type:none;
 }
+
+.sensei-text{
+    color:white;
+}
 #menu li{
     float:left;
+}
+.fa-star{
+    color:aqua;
 }
 #menu li a{
     display:block;
