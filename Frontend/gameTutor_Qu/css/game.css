@@ -2,9 +2,10 @@ body {
     font-family: arial,helvetica,sans-serif;
 }
 
-button,input,select,textarea{
-    font-family:Arial;
-    font-size:100%;
+button, input, select, textarea {
+    font-family: Arial;
+    font-size: 100%;
+    border-color: #e3e3e4;
 }
 select {
     -webkit-appearance: menulist;
@@ -73,20 +74,65 @@ form{
     width:auto;
     display:inline-block;
 }
-.nav-right{
-    min-width:250px;
-    float:right;
-    width:auto;
-    display:inline-block;
-    position:relative;
+.gamerSearch {
+    height: 30px;
+    margin-top: 10px;
+}
+.gamer-searchSensei{
+    width:20%;
+    height:30px;
+    margin-top:10px;
+}
+.gamer-input {
+    width: 60%;
+    margin-left: -4px;
+    border: none;
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+}
+.content-list {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #e3e3e4;
+    display: block;
+}
+.sensei-search-input {
+    margin-left: -4px;
+}
+.input-icon-flag {
+    width: 90%;
+}
+.search-icon-div{
+   width:9%;
+   height:30px;
+}
+.searchIcon {
+    width: 9%;
+    height:30px;
+    color: forestgreen;
+}
+.fa-2x{
+    font-size:20px;
+}
+.result-list {
+    text-align: left;
+    margin-top:20px;
+}
+.nav-right {
+    min-width: 250px;
+    float: right;
+    width: auto;
+    display: inline-block;
+    position: relative;
 }
 .bg-img{
     /*在这里写入背景图*/
     background: url(..) no-repeat;
 }
-.listInfo,.index-left p {
-    border-top: 1px solid #264959;
-    border-bottom: 1px solid #264959;
+.listInfo, .index-left p {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
 }
 .text-center{
