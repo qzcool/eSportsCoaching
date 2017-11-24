@@ -141,7 +141,14 @@ form{
     display: inline-block;
     position: relative;
 }
-.bg-img{
+.sensei-detail-info {
+    border-bottom: 1px solid #e3e3e4;
+}
+.sensei-detail-img {
+    background: url('../images/game0.png') no-repeat;
+    height:100%;
+}
+.bg-img {
     /*在这里写入背景图*/
     background: url(..) no-repeat;
 }
