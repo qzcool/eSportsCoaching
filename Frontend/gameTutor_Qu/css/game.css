@@ -75,20 +75,19 @@ form{
     display:inline-block;
 }
 .gamerSearch {
-    height: 30px;
+    height: 32px;
     margin-top: 10px;
+    border-radius: 4px;
 }
-.gamer-searchSensei{
-    width:20%;
-    height:30px;
-    margin-top:10px;
+.gamer-searchSensei {
+    width: 20%;
+    height: 32px;
+    margin-top: 10px;
+    border-radius: 4px;
 }
 .gamer-input {
     width: 60%;
-    margin-left: -4px;
-    border: none;
-    border-top: 1px solid #e3e3e4;
-    border-bottom: 1px solid #e3e3e4;
+    border: 1px solid #e3e3e4;
 }
 .content-list {
     width: 100%;
@@ -103,9 +102,13 @@ form{
 .input-icon-flag {
     width: 90%;
 }
-.search-icon-div{
-   width:9%;
-   height:30px;
+.needtoToggle {
+    height:100px;
+    padding-top:10px;
+}
+.search-icon-div {
+    width: 9%;
+    height: 30px;
 }
 .searchIcon {
     width: 9%;

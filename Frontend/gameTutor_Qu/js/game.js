@@ -103,5 +103,9 @@ $(function(){
   $("#signUpToSensei").click(function(){
       window.location.href="signUp.html";
   });
+  
+  $("#listSensei").click(function () {
+      $(".needtoToggle")
+  });
 
 });
