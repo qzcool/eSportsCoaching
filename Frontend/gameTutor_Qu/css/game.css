@@ -89,6 +89,10 @@ form{
     margin-top: 10px;
     border-radius: 4px;
 }
+
+.list-view-search{
+    width:40%;
+}
 .gamer-searchSensei {
     width: 20%;
     height: 32px;
@@ -158,6 +162,21 @@ form{
     background: url('../images/backgroundImage2.png') no-repeat;
     height: 100%;
     width: 100%;
+}
+.search-list-view {
+    margin-top:10px;
+}
+
+.height-select-for-list {
+    height:33px;
+    border-radius:4px;
+}
+.search-2-line {
+    width: 20%;
+}
+.search-6-line {
+    width: 60%;
+    left:-60px;
 }
 .bg-img {
     /*在这里写入背景图*/
@@ -236,6 +255,10 @@ form{
     background-color:white;
     margin-top:50px;
     margin-bottom:50px;
+}
+
+.margin-bottom-10{
+    margin-bottom:10px;
 }
 
 .senseiDetail-interval {
