@@ -167,6 +167,9 @@ form{
     margin-top:10px;
 }
 
+.response p{
+    margin:auto auto;
+}
 .height-select-for-list {
     height:33px;
     border-radius:4px;
@@ -261,6 +264,14 @@ form{
     margin-bottom:10px;
 }
 
+.half-height{
+    height:50%;
+}
+
+.pricing-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .senseiDetail-interval {
     width: 70%;
     background-color: white;
@@ -272,8 +283,71 @@ form{
     margin-top: 20px;
 }
 
+.pricing-set-student{
+    font-size:20px;
+    margin-top:50px;
+}
+
+.enter-pre-icon {
+    width: 20%;
+    border-right:1px solid #e3e3e4;
+}
+
+.enter-course-price {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.enter-input-info {
+    border: none;
+    height:46px;
+    width:90%;
+    border-left: 1px solid #e3e3e4;
+}
+
+.font-size-money {
+   font-size:20px;
+}
+
+.span-for-moneyIcon {
+    margin-left: -12px;
+    font-size: 20px;
+}
+.button-sep-plus {
+    top: 3px;
+    border-top-right-radius: 3px;
+    position: absolute;
+    right: 3px;
+    width: 40px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    background: #9B9BA0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.button-sep-minus {
+    top: 24px;
+    border-top-right-radius: 3px;
+    position: absolute;
+    right: 3px;
+    width: 40px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    background: #9B9BA0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
 .span-interval-text {
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 .sensei-detail-order {
@@ -456,9 +530,15 @@ form{
   border-right:1px solid #e3e3e4;
 }
 
-.gamer-earn-credit{
+.sensei-priceing-set {
+  border-top: 1px solid #e3e3e4;
   margin-top:20px;
-  margin-bottom:10px;
+  margin-bottom:20px;
+  width:100%;
+}
+.gamer-earn-credit {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .selectYourGame{
   border:none;
