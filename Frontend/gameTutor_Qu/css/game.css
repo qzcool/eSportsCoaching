@@ -155,8 +155,9 @@ form{
     border-bottom: 1px solid #e3e3e4;
 }
 .sensei-detail-img {
-    background: url('../images/game0.png') no-repeat;
-    height:100%;
+    background: url('../images/searchDetailImage.png') no-repeat;
+    height: 100%;
+    width: 100%;
 }
 .bg-img {
     /*在这里写入背景图*/
@@ -167,8 +168,13 @@ form{
     border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
 }
-.text-center{
-  margin-bottom: 10px;
+
+.sensei-profile-div {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+}
+.text-center {
+    margin-bottom: 10px;
 }
 .index-left p {
     padding: 10px 0 10px 15px;
@@ -198,6 +204,33 @@ form{
     border: none;
     border-right: 1px solid #e3e3e4;
     border-bottom: 1px solid #e3e3e4;
+}
+
+.page-bottom {
+    background-color:black;
+    color:white;
+}
+
+.padding-bottom-value {
+    padding-top:20px;
+}
+.padding-to-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.index-bottom-icon {
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.senseiDetail-border {
+    border: 1px solid #e3e3e4;
+}
+.senseiDetail-left{
+    width:70%;
+    background-color:white;
+    margin-top:50px;
 }
 
 .category-search p{
