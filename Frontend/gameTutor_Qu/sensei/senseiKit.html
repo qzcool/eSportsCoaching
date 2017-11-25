@@ -40,11 +40,11 @@
                         </a>
                         <h4 id="courseName" class='needToggle blueColor'>课程</h4>
                         <ul>
-                            <li class="listClick"><a href="unScheduled.html" class='needToggle needToChangeBack' id="course1">未预订时间表</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">日程表</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>列表试图</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>我的评论</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>免费课程</a></li>
+                            <li class="listClick" id="unScheduled"><a href="unScheduled.html" class='needToggle needToChangeBack'>未预订时间表</a></li>
+                            <li class="listClick" id="calender"><a href="calender.html" class="needToggle">日程表</a></li>
+                            <li class="listClick" id="listView"><a href="listView.html" class='needToggle'>列表试图</a></li>
+                            <li class="listClick" id="myReviews"><a href="myReviews.html" class='needToggle'>我的评论</a></li>
+                            <li class="listClick" id="getFreeLessons"><a href="getFreeLessons.html" class='needToggle'>免费课程</a></li>
                         </ul>
                     </div>
                     <div class="listInfo">
@@ -53,9 +53,9 @@
                         </a>
                         <h4 id="walletName" class='needToggle blueColor'>钱包</h4>
                         <ul>
-                            <li class="listClick"><a href="#" class='needToggle'>概要</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">我的预订</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>历史记录</a></li>
+                            <li class="listClick" id="summary"><a href="summary.html" class='needToggle'>概要</a></li>
+                            <li class="listClick" id="mySubscription"><a href="mySubscription.html" class="needToggle">我的预订</a></li>
+                            <li class="listClick" id="history"><a href="history.html" class='needToggle'>历史记录</a></li>
                         </ul>
                     </div>
                     <div class="listInfo">
@@ -64,9 +64,9 @@
                         </a>
                         <h4 id="preferenceName" class='needToggle blueColor'>设置</h4>
                         <ul>
-                            <li class="listClick"><a href="#" class='needToggle'>个人信息</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">账户设置</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>支付方式</a></li>
+                            <li class="listClick" id="userProfile"><a href="userProfile.html" class='needToggle'>个人信息</a></li>
+                            <li class="listClick" id="accountSetting"><a href="accountSetting.html" class="needToggle">账户设置</a></li>
+                            <li class="listClick" id="paymentOptions"><a href="paymentOptions.html" class='needToggle'>支付方式</a></li>
                         </ul>
                     </div>
                     <p class='needToggle listClick'><a href="#">注销</a></p>
@@ -76,12 +76,29 @@
                         界面展示&gt;课程
                     </ol>
                     <div class="selectionInfo col-xs-10">
-                        <div class="selection-header"><h3>未预订时间表</h3></div>
-                        <div class="selection-body">
-                            <form class="unscheduled-course">
-                                <div class="profile-input-box blockStyle">
-                                    <p>你还没有预订任何课程</p>
+                        <div class="selection-header"><h3> 个人信息</h3></div>
+                        <div class="selection-body col-xs-12">
+                            <form class="col-xs-12 formLeft">
+                                <div class="profile-input-box blockStyle col-xs-12">
+                                    <label for="emailNameI" class="blockStyle">邮件地址</label>
+                                    <input id="emailNameI" class="profile-input"/>
                                 </div>
+                                <div class="profile-input-box blockStyle col-xs-4">
+                                    <label for="serviceNameI" class="blockStyle">服务</label>
+                                    <select id="serviceNameI" class="profile-input">
+                                        <option value="" selected=""> 微信</option>
+                                        <option value="" selected=""> skype</option>
+                                    </select>
+                                </div>
+                                <div class="profile-input-box blockStyle col-xs-4">
+                                    <label for="accoutNameI" class="blockStyle">用户名</label>
+                                    <input id="accoutNameI" class="profile-input"/>
+                                </div>
+                                <div class="profile-input-box blockStyle col-xs-4">
+                                    <label for="userNameII" class="blockStyle">联系方式</label>
+                                    <input id="userNameII" class="profile-input"/>
+                                </div>
+                                <button type="button" class="btn btn-info pull-right">更新设置</button>
                             </form>
                         </div>
                     </div>

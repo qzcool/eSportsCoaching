@@ -496,6 +496,9 @@ form{
 .selection-body{
   padding-top:20px;
 }
+.height-center{
+  margin:10px auto;
+}
 .buttonRadis{
   text-decoration: none;
   white-space: nowrap;

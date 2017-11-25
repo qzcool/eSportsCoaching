@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="../css/game.css" type="text/css" />
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-
-    </script>
 </head>
 <body>
     <div align="center">
@@ -46,22 +40,22 @@
                         </a>
                         <h4 id="courseName" class='needToggle blueColor'>课程</h4>
                         <ul>
-                            <li class="listClick"><a href="unScheduled.html" class='needToggle needToChangeBack' id="course1">未预订时间表</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">日程表</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>列表试图</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>我的评论</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>免费课程</a></li>
+                            <li class="listClick" id="unScheduled"><a href="unScheduled.html" class='needToggle needToChangeBack'>未预订时间表</a></li>
+                            <li class="listClick" id="calender"><a href="calender.html" class="needToggle">日程表</a></li>
+                            <li class="listClick" id="listView"><a href="listView.html" class='needToggle'>列表试图</a></li>
+                            <li class="listClick" id="myReviews"><a href="myReviews.html" class='needToggle'>我的评论</a></li>
+                            <li class="listClick" id="getFreeLessons"><a href="getFreeLessons.html" class='needToggle'>免费课程</a></li>
                         </ul>
                     </div>
                     <div class="listInfo">
                         <a href="#">
-                            <img src="../images/dashboard_nav_wallet.png" alt="wallet" class="img-responsive imageInline" />
+                        <img src="../images/dashboard_nav_wallet.png" alt="wallet" class="img-responsive imageInline" />
                         </a>
                         <h4 id="walletName" class='needToggle blueColor'>钱包</h4>
                         <ul>
-                            <li class="listClick"><a href="#" class='needToggle'>概要</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">我的预订</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>历史记录</a></li>
+                            <li class="listClick" id="summary"><a href="summary.html" class='needToggle'>概要</a></li>
+                            <li class="listClick" id="mySubscription"><a href="mySubscription.html" class="needToggle">我的预订</a></li>
+                            <li class="listClick" id="history"><a href="history.html" class='needToggle'>历史记录</a></li>
                         </ul>
                     </div>
                     <div class="listInfo">
@@ -70,9 +64,9 @@
                         </a>
                         <h4 id="preferenceName" class='needToggle blueColor'>设置</h4>
                         <ul>
-                            <li class="listClick"><a href="#" class='needToggle'>个人信息</a></li>
-                            <li class="listClick"><a href="../../LoginAsGamer/Lessons/CanlenderView.html" class="needToggle">账户设置</a></li>
-                            <li class="listClick"><a href="#" class='needToggle'>支付方式</a></li>
+                            <li class="listClick" id="userProfile"><a href="userProfile.html" class='needToggle'>个人信息</a></li>
+                            <li class="listClick" id="accountSetting"><a href="accountSetting.html" class="needToggle">账户设置</a></li>
+                            <li class="listClick" id="paymentOptions"><a href="paymentOptions.html" class='needToggle'>支付方式</a></li>
                         </ul>
                     </div>
                     <p class='needToggle listClick'><a href="#">注销</a></p>
@@ -82,10 +76,19 @@
                         界面展示&gt;课程
                     </ol>
                     <div class="selectionInfo col-xs-11">
-                        <div class="center-block search-list-view  margin-bottom-10">
-                            <p class="text-center">您还没有收到任何反馈</p>
-                        </div>
+                      <p class="col-xs-4 text-left height-center">账户余额</p>
+                      <p class="col-xs-8 text-right height-center">最小可提出金额为：￥50.00</p>
                     </div>
+                    <div class="gamer-summary-border col-xs-11">
+                      <h1>￥0.00</h1>
+                    </div>
+                    <div class="gamer-summary-border col-xs-11 ">
+                      <div class="col-xs-10 text-right pull-right">
+                        <span class="height-center">可提取￥0.00到交易账户中</span>
+                        <button type="button" class="btn btn-info height-center gamer-earn-credit">提出</button>
+                      </div>
+                      </div>
+                </div>
             </div>
         </div>
         <script language="JavaScript" src="../js/game.js"></script>
