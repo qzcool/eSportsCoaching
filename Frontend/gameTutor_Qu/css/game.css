@@ -155,7 +155,7 @@ form{
     border-bottom: 1px solid #e3e3e4;
 }
 .sensei-detail-img {
-    background: url('../images/searchDetailImage.png') no-repeat;
+    background: url('../images/backgroundImage2.png') no-repeat;
     height: 100%;
     width: 100%;
 }
@@ -172,6 +172,7 @@ form{
 .sensei-profile-div {
     border-top: 1px solid #e3e3e4;
     border-bottom: 1px solid #e3e3e4;
+    margin-bottom:30px;
 }
 .text-center {
     margin-bottom: 10px;
@@ -234,18 +235,68 @@ form{
     width:70%;
     background-color:white;
     margin-top:50px;
+    margin-bottom:50px;
 }
 
-.category-search p{
-    text-align:left;
-    padding-left:20px;
-    font-size:15px;
+.senseiDetail-interval {
+    width: 70%;
+    background-color: white;
+    margin-top: 50px;
+}
+.senseiDetail-interval-next {
+    width: 70%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.span-interval-text {
+    padding-left:10px;
+}
+
+.sensei-detail-order {
+    font-size:24px;
+}
+.margin-top-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.achievement-sensei {
+    width: 40%;
+}
+
+.about-sensei {
+    width: 55%;
+}
+.category-search p {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.boder-only-top {
+    border-top: 1px solid #e3e3e4;
+    padding-top: 10px
+}
+
+.feature-sensei {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.review-from-player {
+    padding-left:30px;
+    width:50%;
+    height:30px;
+    margin-bottom:20px;
 }
 .game-classify {
-    width:100%;
-    height:38px;
-    text-align:left;
-    font-size:24px;
+    width: 100%;
+    height: 38px;
+    text-align: left;
+    font-size: 24px;
 }
 .games-to-list {
     border: none;
