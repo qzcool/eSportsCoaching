@@ -42,6 +42,14 @@ form{
     background-image:url(../images/gameLogo.png);
     background-repeat:no-repeat;
 }
+.index-search-btn {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.text-index-player {
+    border: 1px solid #e3e3e4;
+    height:100%;
+}
 .searchChoice {
     height: 36px;
     position: relative;
@@ -56,9 +64,11 @@ form{
     display: inline-block;
     top: 10px;
 }
-
-.font-green{
-  color:green;
+.index-padding-setting {
+    padding-bottom:20px;
+}
+.font-green {
+    color: green;
 }
 .find-sensei-img{
    width:206px;
@@ -378,7 +388,7 @@ form{
   padding-top:-20px;
 }
 
-.section-wrap .align-center{
+.align-center{
   text-align:center;
 }
 .hero-header{
@@ -437,6 +447,16 @@ form{
 .padding-index{
   padding-top:100px;
 }
+.selection-height {
+    width:100%;
+    height: 100%;
+}
+.index-backgroundImage {
+    background-image: url("../images/index-backroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center bottom, center center;
+}
 .blueColor{
   color:#ddd;
 }
@@ -463,7 +483,7 @@ li{
 }
 #menu li a{
     display:block;
-    padding:15px 50px;
+    padding:10px 50px;
     text-decoration:none;
 }
 .nav-fill{

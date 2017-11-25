@@ -107,5 +107,8 @@ $(function(){
   $("#listSensei").click(function () {
       $(".needtoToggle")
   });
+  $("#searchSenseiIndex").click(function () {
+      window.location.href = "gamer/searchSensei.html";
+  });
 
 });
