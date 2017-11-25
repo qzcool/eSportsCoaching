@@ -206,9 +206,12 @@ form{
     border-bottom: 1px solid #e3e3e4;
 }
 
+#searchSenseiIndex {
+    margin-bottom:20px;
+}
 .page-bottom {
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
 }
 
 .padding-bottom-value {
