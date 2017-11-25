@@ -449,6 +449,17 @@ form{
   display:block;
   float:left;
 }
+
+.gamer-summary-border{
+  border-bottom:1px solid #e3e3e4;
+  border-left:1px solid #e3e3e4;
+  border-right:1px solid #e3e3e4;
+}
+
+.gamer-earn-credit{
+  margin-top:20px;
+  margin-bottom:10px;
+}
 .selectYourGame{
   border:none;
   /*appearance:none;
@@ -543,7 +554,7 @@ form{
     width: 20%;
     background-color: white;
     margin:4px 2px;
-} 
+}
 .profile-input-introduce {
     float: left;
     width: 100%;
