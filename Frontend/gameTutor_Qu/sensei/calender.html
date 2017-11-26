@@ -9,8 +9,10 @@
     </style>
     <link rel="stylesheet" href="../css/game.css" type="text/css" />
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 </head>
 <body>
     <div align="center" id="gameDiv">
@@ -82,7 +84,7 @@
                     <div class="selectionInfo col-xs-10">
                         <div class="">
                             <form class="canlender-body">
-                                <div class="row blockStyle canlender-header">
+                                <div class="blockStyle canlender-header">
                                     <label for="userNameI" class="blockStyle"><h3>2017年11月</h3></label>
                                     <div class="calender-button">
                                       <button class="calender-button-l deepBlue ">月</button>
@@ -92,8 +94,8 @@
                                       <button class="deepBlue span-canlender"><span>&gt;</span></button>
                                     </div>
                                 </div>
-                                <div class="blockStyle">
-                                    <table class="table-responsive table-canlender">
+                                <div class="blockStyle calender-body">
+                                    <table class="table table-canlender table-bordered text-center">
                                       <thead>
                                         <tr>
                                           <th class="th-canlender">日</th>
@@ -105,9 +107,26 @@
                                           <th class="th-canlender">六</th>
                                         </tr>
                                       </thead>
+                                        <tbody id="table-body-calender"></tbody>
                                     </table>
                                 </div>
                             </form>
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="calender-color-button confirmed-color"></button>
+                            <span class="calender-text-color">确认课程</span>
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="calender-color-button cancelled-color"></button>
+                            <span class="calender-text-color">取消课程</span>
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="calender-color-button awaited-color"></button>
+                            <span class="calender-text-color">等待</span>
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="calender-color-button action-need-color"></button>
+                            <span class="calender-text-color">需要注意</span>
                         </div>
                     </div>
                 </div>

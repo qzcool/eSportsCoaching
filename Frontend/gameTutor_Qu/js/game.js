@@ -35,14 +35,62 @@ function checkUserInfo(){
     }
 }
 
-function addContentForTd(tmp,num) {
-    tmp.innerHTML = num + ':00';
-}
 
+
+function createCanlenderTable(){
+    var tbodyForAvailablity;
+    var gameid = document.getElementById('table-gamer-calender');
+    var senseiId = document.getElementById('table-body-calender');
+    if (gameid) {
+        tbodyForAvailablity = gameid;
+    } else {
+        tbodyForAvailablity = senseiId;
+    }
+    var today = new Date();
+    var year = today.getFullYear();      
+    var month = today.getMonth() + 1;    
+    var day = today.getDate();           
+    var startDay = new Date(year, month - 1, 1).getDay();
+    var nDays = new Date(year, month, 0).getDate();
+
+    var numRow = 0;  
+    var i;      
+    var html = '';
+    var indexRow = 0;
+    html += '<tr>';
+    for (i = 0; i < startDay; i++) {
+        html += '<td></td>';
+        numRow++;
+    }
+    var extra = (startDay + nDays) % 7;
+    for (var j = 1; j <= nDays; j++) {
+        if (j == day) {
+            html += '<td style="color:red">';
+            html += j;    
+        }
+        else {
+            html += '<td>';
+            html += j;    
+        }
+        html += '</td>';
+        numRow++;
+        if (numRow == 7) { 
+            numRow = 0;
+            indexRow++;        
+            html += '</tr><tr>';
+        }
+    }
+    if (tbodyForAvailablity) {
+        tbodyForAvailablity.innerHTML = html;
+    }
+}
+createCanlenderTable();
+
+/**
+ * sensei can set their available state
+ */
 function createAvailablityTable(){
     var tbodyForAvailablity = document.getElementById('table-body-availablity');
-    var trArray = [];
-    var tdArray = [];
     var tableArray = new Array(24);
     if (tbodyForAvailablity) {
         for (var i = 0; i < 24; i++) {
@@ -62,7 +110,6 @@ function createAvailablityTable(){
         }    
         
     }
-    console.log(tbodyForAvailablity.innerHTML);
 }
 createAvailablityTable();
 
