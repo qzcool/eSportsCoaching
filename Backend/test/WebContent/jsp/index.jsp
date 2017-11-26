@@ -8,6 +8,7 @@
 </head>
 <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 <body id="bd">
+	<p>ok</p>
 	学号：<input type="text" id="code">  &nbsp&nbsp姓名：<input type="text" id="name"><br>
 	年龄：<input type="text" id="age">   &nbsp&nbsp性别：<input type="radio" name="a" class="sex">男<input type="radio" name="a" class="sex">女<br>
 	电话：<input type="text" id="phone"> &nbsp&nbsp班级：<select id="slt">
