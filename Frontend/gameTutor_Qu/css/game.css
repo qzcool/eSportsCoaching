@@ -293,6 +293,10 @@ form{
     border-right:1px solid #e3e3e4;
 }
 
+.price-btn-choose{
+    width:20%;
+}
+
 .enter-course-price {
     height: 20px;
     border-radius: 5px;
@@ -375,6 +379,11 @@ form{
 .boder-only-top {
     border-top: 1px solid #e3e3e4;
     padding-top: 10px
+}
+
+.boder-only-top-bottom {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
 }
 
 .feature-sensei {
@@ -540,21 +549,39 @@ form{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.selectYourGame{
-  border:none;
-  /*appearance:none;
+
+.choose-course-discount {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.padding-saving-btn {
+    padding-right: -15px;
+}
+.saving-btn-pricing {
+    padding-right: 0 !important;
+} 
+.selectYourGame {
+    border: none;
+    /*appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;*/
 }
-.dashboardLink{
-  text-align:left;
-  display:block;
-  width:100%;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 20px;
+
+.payout-input {
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e4 !important;
+    width:60%;
+    height:50px;
+}
+.dashboardLink {
+    text-align: left;
+    display: block;
+    width: 100%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 20px;
 }
 .selectionInfo{
   margin-top:20px;
@@ -685,10 +712,17 @@ li{
 .fa-star{
     color:aqua;
 }
-#menu li a{
-    display:block;
-    padding:10px 50px;
-    text-decoration:none;
+
+.profile-page-bottom {
+    margin-top:20px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
 }
 .nav-fill{
     width:auto;
