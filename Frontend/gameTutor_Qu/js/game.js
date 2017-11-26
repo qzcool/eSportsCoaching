@@ -33,8 +33,38 @@ function checkUserInfo(){
           return;
       }
     }
-
 }
+
+function addContentForTd(tmp,num) {
+    tmp.innerHTML = num + ':00';
+}
+
+function createAvailablityTable(){
+    var tbodyForAvailablity = document.getElementById('table-body-availablity');
+    var trArray = [];
+    var tdArray = [];
+    var tableArray = new Array(24);
+    if (tbodyForAvailablity) {
+        for (var i = 0; i < 24; i++) {
+            tableArray[i] = new Array();
+            for (var j = 0; j < 7; j++) {
+                tableArray[i][j] = i + ":00";
+            }
+        }
+        for (var i = 0; i < 24; i++) {
+            tableArray[i] = document.createElement("tr");
+            tbodyForAvailablity.appendChild(tableArray[i]);   
+            for (var j = 0; j < 7; j++) {
+                tableArray[i][j] = document.createElement("td");
+                tableArray[i].appendChild(tableArray[i][j]);   
+                tableArray[i][j].innerHTML = i + ":00";
+            }         
+        }    
+        
+    }
+    console.log(tbodyForAvailablity.innerHTML);
+}
+createAvailablityTable();
 
 function signUpUser(){
     window.location.href="signUp.html";
