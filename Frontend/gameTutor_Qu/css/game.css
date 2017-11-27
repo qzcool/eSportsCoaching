@@ -42,6 +42,14 @@ form{
     background-image:url(../images/gameLogo.png);
     background-repeat:no-repeat;
 }
+.index-search-btn {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.text-index-player {
+    border: 1px solid #e3e3e4;
+    height:100%;
+}
 .searchChoice {
     height: 36px;
     position: relative;
@@ -56,9 +64,11 @@ form{
     display: inline-block;
     top: 10px;
 }
-
-.font-green{
-  color:green;
+.index-padding-setting {
+    padding-bottom:20px;
+}
+.font-green {
+    color: green;
 }
 .find-sensei-img{
    width:206px;
@@ -78,6 +88,10 @@ form{
     height: 32px;
     margin-top: 10px;
     border-radius: 4px;
+}
+
+.list-view-search{
+    width:40%;
 }
 .gamer-searchSensei {
     width: 20%;
@@ -141,7 +155,33 @@ form{
     display: inline-block;
     position: relative;
 }
-.bg-img{
+.sensei-detail-info {
+    border-bottom: 1px solid #e3e3e4;
+}
+.sensei-detail-img {
+    background: url('../images/backgroundImage2.png') no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.search-list-view {
+    margin-top:10px;
+}
+
+.response p{
+    margin:auto auto;
+}
+.height-select-for-list {
+    height:33px;
+    border-radius:4px;
+}
+.search-2-line {
+    width: 20%;
+}
+.search-6-line {
+    width: 60%;
+    left:-60px;
+}
+.bg-img {
     /*在这里写入背景图*/
     background: url(..) no-repeat;
 }
@@ -150,8 +190,14 @@ form{
     border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
 }
-.text-center{
-  margin-bottom: 10px;
+
+.sensei-profile-div {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+    margin-bottom:30px;
+}
+.text-center {
+    margin-bottom: 10px;
 }
 .index-left p {
     padding: 10px 0 10px 15px;
@@ -183,16 +229,180 @@ form{
     border-bottom: 1px solid #e3e3e4;
 }
 
-.category-search p{
-    text-align:left;
-    padding-left:20px;
-    font-size:15px;
+#searchSenseiIndex {
+    margin-bottom:20px;
+}
+.page-bottom {
+    background-color: black;
+    color: white;
+}
+
+.padding-bottom-value {
+    padding-top:20px;
+}
+.padding-to-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.index-bottom-icon {
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.senseiDetail-border {
+    border: 1px solid #e3e3e4;
+}
+.senseiDetail-left{
+    width:70%;
+    background-color:white;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.margin-bottom-10{
+    margin-bottom:10px;
+}
+
+.half-height{
+    height:50%;
+}
+
+.pricing-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.senseiDetail-interval {
+    width: 70%;
+    background-color: white;
+    margin-top: 50px;
+}
+.senseiDetail-interval-next {
+    width: 70%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.pricing-set-student{
+    font-size:20px;
+    margin-top:50px;
+}
+
+.enter-pre-icon {
+    width: 20%;
+    border-right:1px solid #e3e3e4;
+}
+
+.price-btn-choose{
+    width:20%;
+}
+
+.enter-course-price {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.enter-input-info {
+    border: none;
+    height:46px;
+    width:90%;
+    border-left: 1px solid #e3e3e4;
+}
+
+.font-size-money {
+   font-size:20px;
+}
+
+.span-for-moneyIcon {
+    margin-left: -12px;
+    font-size: 20px;
+}
+.button-sep-plus {
+    top: 3px;
+    border-top-right-radius: 3px;
+    position: absolute;
+    right: 3px;
+    width: 40px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    background: #9B9BA0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.button-sep-minus {
+    top: 24px;
+    border-top-right-radius: 3px;
+    position: absolute;
+    right: 3px;
+    width: 40px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    background: #9B9BA0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.span-interval-text {
+    padding-left: 10px;
+}
+
+.sensei-detail-order {
+    font-size:24px;
+}
+.margin-top-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.achievement-sensei {
+    width: 40%;
+}
+
+.about-sensei {
+    width: 55%;
+}
+.category-search p {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.boder-only-top {
+    border-top: 1px solid #e3e3e4;
+    padding-top: 10px
+}
+
+.boder-only-top-bottom {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+}
+
+.feature-sensei {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.review-from-player {
+    padding-left:30px;
+    width:50%;
+    height:30px;
+    margin-bottom:20px;
 }
 .game-classify {
-    width:100%;
-    height:38px;
-    text-align:left;
-    font-size:24px;
+    width: 100%;
+    height: 38px;
+    text-align: left;
+    font-size: 24px;
 }
 .games-to-list {
     border: none;
@@ -322,21 +532,56 @@ form{
   display:block;
   float:left;
 }
-.selectYourGame{
-  border:none;
-  /*appearance:none;
+
+.gamer-summary-border{
+  border-bottom:1px solid #e3e3e4;
+  border-left:1px solid #e3e3e4;
+  border-right:1px solid #e3e3e4;
+}
+
+.sensei-priceing-set {
+  border-top: 1px solid #e3e3e4;
+  margin-top:20px;
+  margin-bottom:20px;
+  width:100%;
+}
+.gamer-earn-credit {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.choose-course-discount {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.padding-saving-btn {
+    padding-right: -15px;
+}
+.saving-btn-pricing {
+    padding-right: 0 !important;
+} 
+.selectYourGame {
+    border: none;
+    /*appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;*/
 }
-.dashboardLink{
-  text-align:left;
-  display:block;
-  width:100%;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 20px;
+
+.payout-input {
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e4 !important;
+    width:60%;
+    height:50px;
+}
+.dashboardLink {
+    text-align: left;
+    display: block;
+    width: 100%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 20px;
 }
 .selectionInfo{
   margin-top:20px;
@@ -358,6 +603,9 @@ form{
 .selection-body{
   padding-top:20px;
 }
+.height-center{
+  margin:10px auto;
+}
 .buttonRadis{
   text-decoration: none;
   white-space: nowrap;
@@ -371,7 +619,7 @@ form{
   padding-top:-20px;
 }
 
-.section-wrap .align-center{
+.align-center{
   text-align:center;
 }
 .hero-header{
@@ -416,7 +664,7 @@ form{
     width: 20%;
     background-color: white;
     margin:4px 2px;
-} 
+}
 .profile-input-introduce {
     float: left;
     width: 100%;
@@ -429,6 +677,16 @@ form{
 }
 .padding-index{
   padding-top:100px;
+}
+.selection-height {
+    width:100%;
+    height: 100%;
+}
+.index-backgroundImage {
+    background-image: url("../images/index-backroundImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center bottom, center center;
 }
 .blueColor{
   color:#ddd;
@@ -454,10 +712,17 @@ li{
 .fa-star{
     color:aqua;
 }
-#menu li a{
-    display:block;
-    padding:15px 50px;
-    text-decoration:none;
+
+.profile-page-bottom {
+    margin-top:20px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
 }
 .nav-fill{
     width:auto;
