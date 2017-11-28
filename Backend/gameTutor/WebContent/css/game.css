@@ -1,0 +1,487 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+}
+
+button, input, select, textarea {
+    font-family: Arial;
+    font-size: 100%;
+    border-color: #e3e3e4;
+}
+select {
+    -webkit-appearance: menulist;
+    align-items: center;
+    white-space: pre;
+    color: black;
+    background-color: #EEEEEE;
+}
+input,textarea,select,button{
+    text-rendering:auto;
+    text-align:start;
+    font:18px Arial;
+}
+
+form{
+    display:block;
+}
+
+#header {
+    position:fixed;
+    z-index:198;
+    display:block;
+    height:60px;
+    zoom:1;
+    width:100%;
+    background-color:rgb(255,255,255);
+}
+.gameLogo {
+    display:block;
+    width: 200px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    background-image:url(../images/gameLogo.png);
+    background-repeat:no-repeat;
+}
+.searchChoice {
+    height: 36px;
+    position: relative;
+}
+.search-navbar-search-wrapper #search-navbar-search .nav-search-scope .facade-selector-wrapper .nav-left{
+    background-color:#ECECED;
+    height:36px;
+}
+.searchInfo {
+    line-height: 36px;
+    height: 36px;
+    display: inline-block;
+    top: 10px;
+}
+
+.font-green{
+  color:green;
+}
+.find-sensei-img{
+   width:206px;
+   height:39px;
+}
+.unscheduled-course{
+  float:left;
+  display:block;
+}
+
+.nav-left{
+    float:left;
+    width:auto;
+    display:inline-block;
+}
+.gamerSearch {
+    height: 30px;
+    margin-top: 10px;
+}
+.gamer-searchSensei{
+    width:20%;
+    height:30px;
+    margin-top:10px;
+}
+.gamer-input {
+    width: 60%;
+    margin-left: -4px;
+    border: none;
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+}
+.content-list {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #e3e3e4;
+    display: block;
+}
+.sensei-search-input {
+    margin-left: -4px;
+}
+.input-icon-flag {
+    width: 90%;
+}
+.search-icon-div{
+   width:9%;
+   height:30px;
+}
+.searchIcon {
+    width: 9%;
+    height:30px;
+    color: forestgreen;
+}
+.fa-2x{
+    font-size:20px;
+}
+.result-list {
+    text-align: left;
+    margin-top:20px;
+}
+.sort-list{
+    margin-top:20px;
+    width:40%;
+    height:30px;
+    display:inline-block;
+}
+.sort-left{
+    float:left;
+}
+.sort-right{
+    float:right;
+}
+.nav-right {
+    min-width: 250px;
+    float: right;
+    width: auto;
+    display: inline-block;
+    position: relative;
+}
+.bg-img{
+    /*在这里写入背景图*/
+    background: url(..) no-repeat;
+}
+.listInfo, .index-left p {
+    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+    padding: 12px 0 8px 0;
+}
+.text-center{
+  margin-bottom: 10px;
+}
+.index-left p {
+    padding: 10px 0 10px 15px;
+}
+.index-left li {
+    list-style: none;
+    padding: 8px 0;
+    margin-left:-40px;
+}
+.index-left li h4{
+    margin: 0;
+    color: #85bac5;
+    display: inline-block;
+    margin-left: 5px;
+}
+.index-left li a,.index-left p a {
+    text-decoration: none;
+    color: #bdc4c8;
+}
+.index-left {
+    background: #183b4c;
+    padding: 20px 0 20px 0;
+}
+
+.index-search-left {
+    padding: 20px 0 20px 0;
+    border: none;
+    border-right: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
+}
+
+.category-search p{
+    text-align:left;
+    padding-left:20px;
+    font-size:15px;
+}
+.game-classify {
+    width:100%;
+    height:38px;
+    text-align:left;
+    font-size:24px;
+}
+.games-to-list {
+    border: none;
+    border-bottom: 1px solid #e3e3e4;
+}
+.min-max {
+    border-radius: 4px;
+    border: 1px solid #e3e3e4;
+    width:30%;
+}
+.avgReview {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+.games-list {
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+.row {
+    margin-right: -25px;
+    margin-left: -15px;
+    margin-top: 40px;
+}
+
+.gameContent{
+  position:relative;
+  width:auto;
+  display:block;
+  margin:60px 0;
+}
+.searchButton{
+  width:200px;
+  height:70px;
+  font-size:35px;
+  text-align:center;
+  margin:30px 5px;
+}
+.scaleButton{
+  color:#fff;
+  font-weight:800;
+}
+.calender-button{
+  float:right;
+}
+.img_index{
+  width:30%;
+  height:150px;
+}
+.canlender-header{
+  margin:0 auto;
+  background-color: #183b4c;
+  width:77%;
+  color:#fff;
+  font-weight:800;
+  padding-bottom:10px;
+}
+.span-canlender{
+  border:none;
+}
+.calender-list-btn{
+  width:10%;
+}
+.deepBlue{
+  background-color: #183b4c;
+}
+.table-canlender{
+  border:1px solid #e3e3e4;
+  width:77%;
+}
+
+.th-canlender{
+  width:11%;
+  height:40px;
+  text-align:center;
+  border:1px solid #e3e3e4;
+}
+.canlender-body{
+  padding-top:20px;
+}
+
+.input-index-user{
+  border:1px solid #e3e3e4;
+  border-radius:4px;
+  width:100%;
+  height:40px;
+  margin-top:10px;
+}
+.forgotSecret{
+  text-align:right;
+  display:block;
+}
+.button-signIn{
+  color:#FFF;
+  background-color:#69d24b;
+  border:none;
+  border-radius:20px;
+  width:40%;
+  height:50px;
+  font-size: 20px;
+  text-align:center;
+  margin:20px auto;
+}
+.signIn-p{
+  text-align:center;
+}
+.input-selection{
+  width:60%;
+}
+
+.imageInline{
+  width:30px;
+  height:30px;
+  display:inline-block;
+  float:left;
+  position:relative;
+}
+.profileStyle{
+  width:150px;
+  height:150px;
+}
+.userProfileStyle{
+  width:210px;
+  height:195px;
+  display:block;
+  float:left;
+}
+.selectYourGame{
+  border:none;
+  /*appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;*/
+}
+.dashboardLink{
+  text-align:left;
+  display:block;
+  width:100%;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 20px;
+}
+.selectionInfo{
+  margin-top:20px;
+  border:1px solid #e3e3e4;
+  height:100%;
+}
+.selection-header{
+  display:block;
+  text-align:left;
+  width:100%;
+}
+.calender-button-l{
+  border:1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size:16px;
+}
+
+.selection-body{
+  padding-top:20px;
+}
+.buttonRadis{
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius:15px;
+  border:1px;
+}
+.buttonTochangeFile{
+  width:100%;
+  height:36px;
+  text-align:center;
+  padding-top:-20px;
+}
+
+.section-wrap .align-center{
+  text-align:center;
+}
+.hero-header{
+  font-size:55px;
+  line-height:55px;
+  color:rgb(63,81,181);
+}
+.hero-select{
+  font-size:45px;
+  line-height:45px;
+  color:rgb(63,81,181);
+}
+.pDisplayInline{
+  display:inline-block;
+}
+.blockStyle{
+  display:block;
+}
+.profile-input-box{
+  width:100%;
+  height:80px;
+  padding:10px 0;
+}
+.profile-input{
+   float:left;
+   width:100%;
+   height:35px;
+   border:1px solid #e3e3e4;
+   border-radius:5px;
+}
+.sensei-achievement-input {
+    border:none;
+    height:33px;
+    float:left;
+    width:77%;
+}
+.sensei-achievement-btn {
+    float: right;
+    border-radius: 10px;
+    border: 1px solid rgba(43, 222, 79, 0.98);
+    height: 25px;
+    width: 20%;
+    background-color: white;
+    margin:4px 2px;
+}
+.profile-input-introduce {
+    float: left;
+    width: 100%;
+    height: 115px;
+    border: 1px solid #e3e3e4;
+    border-radius: 5px;
+}
+.profile-input-introduce-box{
+  height:150px;
+}
+.padding-index{
+  padding-top:100px;
+}
+.blueColor{
+  color:#ddd;
+}
+label{
+  float:left;
+  text-align:left;
+  width:100%;
+}
+.formLeft{
+  padding-left:10px;
+}
+li{
+   list-style-type:none;
+}
+
+.sensei-text{
+    color:white;
+}
+#menu li{
+    float:left;
+}
+.fa-star{
+    color:aqua;
+}
+#menu li a{
+    display:block;
+    padding:15px 50px;
+    text-decoration:none;
+}
+.nav-fill{
+    width:auto;
+    height:36px;
+    border:1px solid #C8C8CD;
+    position:relative;
+    float:left;
+    top:9px;
+}
+
+.facade-selector-wrapper{
+    position:relative;
+    float:left;
+    margin:0;
+    padding-left:5px;
+    border:1px solid #C8C8CD;
+
+}
+.selector-dropdown{
+    position:absolute;
+    height:36px;
+    line-height:36px;
+    display:block;
+    top:10px;
+    left:-44px;
+    width:auto;
+}
+#search-gameInfo{
+
+}
