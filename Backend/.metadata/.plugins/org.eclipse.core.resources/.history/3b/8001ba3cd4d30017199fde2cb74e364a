@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>游戏先生</title>
+<link rel="stylesheet" href="css/game.css" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--  -->
+	<div align="center">
+		<nav class="navbar navbar-default navbar-fixed-top m-b-n">
+		<div class="container-fluid">
+			<div>
+				<div class="gameLogo"></div>
+			</div>
+			<div class="navbar-right input-group">
+				<ul id="menu">
+					<li><a href=''>博客</a></li>
+					<li><a href='signIn.jsp'>登录</a></li>
+					<li><a>游客进入</a></li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+		<div class="col-xs-12 gameContent padding-index">
+			<selection class="selection-wrap align-center">
+			<h1 class="hero-header">来提升你的技能吧！</h1>
+			<h2 class="hero-select">
+				<p class='pDisplayInline'>我想提升</p>
+				<select class="selectYourGame" id="gameOptional">
+				</select>
+			</h2>
+			<div>
+				<button type="button" class="searchButton">寻找教练</button>
+			</div>
+			</selection>
+		</div>
+	</div>
+	<script language="JavaScript" src="js/game.js"></script>
+</body>
+</html>
