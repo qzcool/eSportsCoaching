@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 INDEX VERSION 1.3+E:\javaSE\File2\eSportsCoaching\Backend\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 326187538.index
 2519657509.index
@@ -17,12 +16,3 @@ INDEX VERSION 1.3+E:\javaSE\File2\eSportsCoaching\Backend\.metadata\.plugins\org
 3696089163.index
 677917420.index
 315608230.index
-=======
-INDEX VERSION 1.3+D:\Java\File\eSportsCoaching\Backend\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3035767125.index
-3635815872.index
-1214082917.index
-2285565215.index
-3412228517.index
-3834237786.index
->>>>>>> 109ccf007a68bb45c31c79dc2e7917bd58e0ce37

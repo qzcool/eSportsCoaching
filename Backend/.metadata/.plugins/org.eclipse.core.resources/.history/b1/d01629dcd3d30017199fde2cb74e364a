@@ -15,7 +15,7 @@
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 </head>
 <body>
-<!--  -->    <div align="center">
+    <div align="center">
         <nav class="navbar navbar-default navbar-fixed-top m-b-n">
             <div class="container-fluid">
                 <div>
