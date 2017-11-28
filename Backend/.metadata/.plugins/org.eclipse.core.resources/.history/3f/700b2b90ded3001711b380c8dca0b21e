@@ -42,8 +42,6 @@ $(document).ready(function(){
 	
 	
 	$("#clipBtn").click(function(blog, imgURL){
-		alert(blog);
-		alert(imgURL);
 		suc(blog, imgURL);
 		
 	})

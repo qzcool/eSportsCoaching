@@ -36,14 +36,13 @@ $(document).ready(function(){
 //	imgURL有值			
 			},
 		});
+		//clipArea.destroy();
 	});
 	
 	
 	
 	
 	$("#clipBtn").click(function(blog, imgURL){
-		alert(blog);
-		alert(imgURL);
 		suc(blog, imgURL);
 		
 	})

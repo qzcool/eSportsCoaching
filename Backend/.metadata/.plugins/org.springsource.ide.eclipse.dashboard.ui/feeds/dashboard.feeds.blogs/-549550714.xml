@@ -295,7 +295,8 @@ dependencies {&#xD;
     </author>
     <id>tag:spring.io,2017-11-20:3097</id>
     <updated>2017-11-22T01:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we&amp;rsquo;ll look at testing and test-driven development, in general, in terms of the Spring ecosystem.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we&amp;rsquo;ll look at testing and test-driven development, in general, in terms of the Spring ecosystem.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lTSJCr7xdbM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
   <entry>
@@ -549,7 +550,8 @@ dependencies {&#xD;
     </author>
     <id>tag:spring.io,2017-11-05:3087</id>
     <updated>2017-11-15T00:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! In this installment of Spring Tips, we&amp;rsquo;ll look at the Spring Boot build plugin, &amp;ldquo;fat&amp;rdquo; .jars, executable .jars, and &amp;ldquo;thin&amp;rdquo; .jars.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this installment of Spring Tips, we&amp;rsquo;ll look at the Spring Boot build plugin, &amp;ldquo;fat&amp;rdquo; .jars, executable .jars, and &amp;ldquo;thin&amp;rdquo; .jars.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/arOqTOEtAVA" frameborder="0" gesture="media" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
   <entry>
