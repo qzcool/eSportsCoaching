@@ -455,15 +455,49 @@ form{
   height:150px;
 }
 .canlender-header{
-  margin:0 auto;
   background-color: #183b4c;
   width:77%;
   color:#fff;
   font-weight:800;
+  height:100px;
   padding-bottom:10px;
 }
-.span-canlender{
-  border:none;
+.calender-body {
+    width: 77%;
+    font-size:15px;
+}
+
+.confirmed-color {
+    background: #69A53C;
+    border-color: #69A53C;
+}
+.cancelled-color {
+    background: #9B9BA0;
+    border-color: #9B9BA0;
+}
+
+.awaited-color {
+    background: #3a6d88;
+    border-color: #2D5262;
+}
+
+.action-need-color {
+    background: #FA6464;
+    border-color: #FA6464;
+}
+
+.calender-color-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #e3e3e4;
+}
+.calender-text-color {
+    height:30px;
+    line-height:30px;
+}
+.span-canlender {
+    border: none;
 }
 .calender-list-btn{
   width:10%;
@@ -717,6 +751,24 @@ li{
     margin-top:20px;
     padding-left:0 !important;
     padding-right:0 !important;
+}
+
+.availablity-info {
+    width:30%;
+    text-align:left;
+    font-size:20px;
+}
+
+.div-availablity-table {
+    width:80%;
+}
+.availablity-select {
+    width: 70%;
+    height: 80px;
+}
+
+.place-search-list {
+    width:30%;
 }
 
 #menu li a {

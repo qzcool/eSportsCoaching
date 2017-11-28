@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 </head>
 <body>
     <div align="center">
@@ -21,9 +24,8 @@
                 </div>
                 <div class="navbar-right input-group">
                     <ul id="menu">
-                        <li><a href=''>博客</a></li>
                         <li><a href=''>￥0.00</a></li>
-                        <li><a>个人中心</a></li>
+                        <li><a href="profile.html">个人中心</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,17 +50,17 @@
                         <ul>
                             <li class="listClick" id="unScheduled"><a href="unScheduled.html" class='needToggle needToChangeBack'>未预订时间表</a></li>
                             <li class="listClick" id="calender"><a href="calender.html" class="needToggle">日程表</a></li>
-                            <li class="listClick" id="listView"><a href="listView.html" class='needToggle'>列表试图</a></li>
+                            <li class="listClick" id="listView"><a href="listView.html" class='needToggle'>列表视图</a></li>
                             <li class="listClick" id="myReviews"><a href="myReviews.html" class='needToggle'>我的评论</a></li>
                         </ul>
                     </div>
                     <div class="listInfo">
                         <a href="#">
-                        <img src="../images/dashboard_nav_wallet.png" alt="wallet" class="img-responsive imageInline" />
+                            <img src="../images/dashboard_nav_wallet.png" alt="wallet" class="img-responsive imageInline" />
                         </a>
                         <h4 id="walletName" class='needToggle blueColor'>钱包</h4>
                         <ul>
-                            <li class="listClick" id="summary"><a href="cashOut.html" class='needToggle'>支出</a></li>
+                            <li class="listClick" id="summary"><a href="cashOut.html" class='needToggle'>提现</a></li>
                             <li class="listClick" id="history"><a href="history.html" class='needToggle'>历史记录</a></li>
                         </ul>
                     </div>
@@ -68,18 +70,18 @@
                         </a>
                         <h4 id="preferenceName" class='needToggle blueColor'>首选项</h4>
                         <ul>
-                            <li class="listClick" id="userProfile"><a href="userProfile.html" class='needToggle'>个人信息</a></li>
+                            <li class="listClick" id="userProfile"><a href="profile.html" class='needToggle'>个人信息</a></li>
                             <li class="listClick" id="accountSetting"><a href="accountSetting.html" class="needToggle">账户设置</a></li>
                             <li class="listClick" id="pricing"><a href="pricing.html" class="needToggle">定价</a></li>
-                            <li class="listClick" id="availability"><a href="availability.html" class='needToggle'>账户余额</a></li>
+                            <li class="listClick" id="availability"><a href="availability.html" class='needToggle'>空闲时间</a></li>
                             <li class="listClick" id="kit"><a href="kit.html" class='needToggle'>工具</a></li>
                         </ul>
                     </div>
-                    <p class='needToggle listClick'><a href="#">注销</a></p>
+                    <p class='needToggle listClick'><a href="../index.html">注销</a></p>
                 </div>
                 <div class="col-xs-10 right-center">
                     <ol class="dashboardLink">
-                        界面展示&gt;课程
+                        界面展示&gt;首选项&gt;个人信息
                     </ol>
                     <div class="selectionInfo col-xs-10">
                         <div class="selection-header"><h3> 个人信息</h3></div>
@@ -91,26 +93,26 @@
                             <form class="col-xs-8 formLeft">
                                 <div class="profile-input-box blockStyle">
                                     <label for="userNameI" class="blockStyle">姓名</label>
-                                    <input id="userNameI" class="profile-input"/>
+                                    <input id="userNameI" class="profile-input" />
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="screenNameI" class="blockStyle">屏幕名字</label>
-                                    <input id="screenNameI" class="profile-input"/>
+                                    <input id="screenNameI" class="profile-input" />
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="gameNameI" class="blockStyle">你的游戏</label>
-                                    <input id="gameNameI" class="profile-input"/>
+                                    <input id="gameNameI" class="profile-input" />
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="achievementI" class="blockStyle">你的成绩</label>
-                                    <div  class="profile-input">
-                                        <input id="achievementI" class="sensei-achievement-input"/>
+                                    <div class="profile-input">
+                                        <input id="achievementI" class="sensei-achievement-input" />
                                         <button class="sensei-achievement-btn">添加</button>
                                     </div>
                                 </div>
                                 <div class="profile-input-introduce-box blockStyle">
                                     <label for="userNameII" class="blockStyle">自我介绍</label>
-                                    <input id="userNameII" class="profile-input-introduce"/>
+                                    <input id="userNameII" class="profile-input-introduce" />
                                 </div>
                             </form>
                         </div>

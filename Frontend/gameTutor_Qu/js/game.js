@@ -33,8 +33,85 @@ function checkUserInfo(){
           return;
       }
     }
-
 }
+
+
+
+function createCanlenderTable(){
+    var tbodyForAvailablity;
+    var gameid = document.getElementById('table-gamer-calender');
+    var senseiId = document.getElementById('table-body-calender');
+    if (gameid) {
+        tbodyForAvailablity = gameid;
+    } else {
+        tbodyForAvailablity = senseiId;
+    }
+    var today = new Date();
+    var year = today.getFullYear();      
+    var month = today.getMonth() + 1;    
+    var day = today.getDate();           
+    var startDay = new Date(year, month - 1, 1).getDay();
+    var nDays = new Date(year, month, 0).getDate();
+
+    var numRow = 0;  
+    var i;      
+    var html = '';
+    var indexRow = 0;
+    html += '<tr>';
+    for (i = 0; i < startDay; i++) {
+        html += '<td></td>';
+        numRow++;
+    }
+    var extra = (startDay + nDays) % 7;
+    for (var j = 1; j <= nDays; j++) {
+        if (j == day) {
+            html += '<td style="color:red">';
+            html += j;    
+        }
+        else {
+            html += '<td>';
+            html += j;    
+        }
+        html += '</td>';
+        numRow++;
+        if (numRow == 7) { 
+            numRow = 0;
+            indexRow++;        
+            html += '</tr><tr>';
+        }
+    }
+    if (tbodyForAvailablity) {
+        tbodyForAvailablity.innerHTML = html;
+    }
+}
+createCanlenderTable();
+
+/**
+ * sensei can set their available state
+ */
+function createAvailablityTable(){
+    var tbodyForAvailablity = document.getElementById('table-body-availablity');
+    var tableArray = new Array(24);
+    if (tbodyForAvailablity) {
+        for (var i = 0; i < 24; i++) {
+            tableArray[i] = new Array();
+            for (var j = 0; j < 7; j++) {
+                tableArray[i][j] = i + ":00";
+            }
+        }
+        for (var i = 0; i < 24; i++) {
+            tableArray[i] = document.createElement("tr");
+            tbodyForAvailablity.appendChild(tableArray[i]);   
+            for (var j = 0; j < 7; j++) {
+                tableArray[i][j] = document.createElement("td");
+                tableArray[i].appendChild(tableArray[i][j]);   
+                tableArray[i][j].innerHTML = i + ":00";
+            }         
+        }    
+        
+    }
+}
+createAvailablityTable();
 
 function signUpUser(){
     window.location.href="signUp.html";
@@ -54,11 +131,8 @@ function addOptionsForSelect(){
         var img = document.createElement("img");   
         img.src = "images/game" + i + ".png";
         img.classList.add("img-responsive");
-        gamesDiv.appendChild(img);
-      
-    }
-    
-
+        gamesDiv.appendChild(img);    
+    } 
 }
 addOptionsForSelect();
 
@@ -110,24 +184,4 @@ $(function(){
   $("#searchSenseiIndex").click(function () {
       window.location.href = "gamer/searchSensei.html";
   });
-  $("#datetimepicker1").datetimepicker({
-      format: "yyyy-mm-dd",
-      autoclose: true,
-      todayBtn: true,
-      todayHighlight: true,
-      showMeridian: true,
-      pickerPosition: "bottom-left",
-      language: 'zh-CN',
-      startView: 2,
-      minView: 2
-  });
-  var today = new Date();
-  var nowdate = (today.getFullYear()) + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-  var date = new Date(nowdate);
-  var mon = date.getMonth() + 1;
-  var day = date.getDate();
-  var mydate = date.getFullYear() + "-" + (mon < 10 ? "0" + mon : mon) + "-" + (day < 10 ? "0" + day : day);
- // document.getElementById("nowdate").value = mydate;
- 
-  $(".dropdown-toggle").dropdown('toggle');
 });
