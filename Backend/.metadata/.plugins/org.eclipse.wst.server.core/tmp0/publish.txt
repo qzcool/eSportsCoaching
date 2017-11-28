@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Tue Nov 28 08:34:15 CST 2017
+#Tue Nov 28 08:35:04 CST 2017
 org.eclipse.jst.jee.server\:/binary\:E\:\\javaSE\\File2\\eSportsCoaching\\Backend\\gameTutor\\WebContent\\WEB-INF\\lib\\spring-web-4.3.6.RELEASE.jar=E\:\\BigData\\apache-tomcat-7.0.53\\webapps\\gameTutor\\WEB-INF\\lib\\spring-web-4.3.6.RELEASE.jar
 org.eclipse.jst.jee.server\:gameTutor=E\:\\BigData\\apache-tomcat-7.0.53\\webapps\\gameTutor
