@@ -1,7 +1,5 @@
 package cn.gt.pojo;
 
-import javax.websocket.Decoder.Binary;
-
 public class User {
 
 	private int uId;
