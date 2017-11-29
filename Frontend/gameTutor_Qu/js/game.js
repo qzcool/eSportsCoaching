@@ -155,45 +155,58 @@ function changeProfileBtnWidth(){
 
 }
 
-$(function(){
-    $("#toggleFlag").click(function(){
-     if($("#toggleFlag").text() === "<"){
-       var leftPosition=-$("#leftBar").width()*0.7;
-        $("#toggleFlag").text(">");
-        $("#leftBar").animate({left:leftPosition},500);
-        $(".needToggle").hide();
-        $(".imageInline").css("float","right");
-     }else{
-        $("#toggleFlag").text("<");
-        $("#leftBar").animate({left:"0px"},500);
-        $(".needToggle").show();
-        $(".imageInline").css("float","left");
-     }
-  });
-  /*init element background color when click event hanppen*/
-  var initColor = function(){
-    $(".listClick").css("background-color","");
-    $(".listClick").mouseover(function(){
+$(function () {
+    $("#toggleFlag").click(function () {
+        if ($("#toggleFlag").text() === "<") {
+            var leftPosition = -$("#leftBar").width() * 0.7;
+            $("#toggleFlag").text(">");
+            $("#leftBar").animate({ left: leftPosition }, 500);
+            $(".needToggle").hide();
+            $(".imageInline").css("float", "right");
+        } else {
+            $("#toggleFlag").text("<");
+            $("#leftBar").animate({ left: "0px" }, 500);
+            $(".needToggle").show();
+            $(".imageInline").css("float", "left");
+        }
     });
-  }
-  $(".listClick").click(function(){
-     initColor();
-     $(this).css("background-color","#69A53C");
-  });
+    /*init element background color when click event hanppen*/
+    var initColor = function () {
+        $(".listClick").css("background-color", "");
+        $(".listClick").mouseover(function () {
+        });
+    }
+    $(".listClick").click(function () {
+        initColor();
+        $(this).css("background-color", "#69A53C");
+    });
 
-  /*link to matched page*/
-  var locationArray=["unScheduled","calender","listView","myReviews","getFreeLessons","summary","mySubscription","history","userProfile","accountSetting","paymentOptions"]
-  $("#course1").click(function(){
+    /*link to matched page*/
+    var locationArray = ["unScheduled", "calender", "listView", "myReviews", "getFreeLessons", "summary", "mySubscription", "history", "userProfile", "accountSetting", "paymentOptions"]
+    $("#course1").click(function () {
 
-  });
-  $("#signUpToSensei").click(function(){
-      window.location.href="signUp.html";
-  });
-  
-  $("#listSensei").click(function () {
-      $(".needtoToggle")
-  });
-  $("#searchSenseiIndex").click(function () {
-      window.location.href = "gamer/searchSensei.html";
-  });
+    });
+    $("#signUpToSensei").click(function () {
+        window.location.href = "signUp.html";
+    });
+
+    $("#listSensei").click(function () {
+        $(".needtoToggle")
+    });
+    $("#searchSenseiIndex").click(function () {
+        window.location.href = "gamer/searchSensei.html";
+    });
+
+    $("#gamerForSearchSensei").click(function () {
+        window.location.href = "searchSensei.html";
+    });
+    $(".gameLogo").click(function () {
+        if (window.location.href.match(/\/index.html/)) {
+            window.location.href = 'index.html';
+        } else {
+            window.location.href = '../index.html';
+        }
+       
+    });
+
 });
