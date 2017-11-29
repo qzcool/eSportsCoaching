@@ -9,6 +9,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<!--  -->
 	<div align="center">
 		<nav class="navbar navbar-default navbar-fixed-top m-b-n">
 		<div class="container-fluid">
@@ -17,7 +18,7 @@
 			</div>
 			<div class="navbar-right input-group">
 				<ul id="menu">
-					<li><a href=''>博客</a></li>
+					<li><a href='#'>博客</a></li>
 					<li><a href='signIn.jsp'>登录</a></li>
 					<li><a>游客进入</a></li>
 				</ul>

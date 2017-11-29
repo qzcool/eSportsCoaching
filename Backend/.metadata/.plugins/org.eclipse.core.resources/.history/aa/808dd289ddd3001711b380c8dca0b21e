@@ -1,0 +1,88 @@
+var imgURL = null;
+var blog = null;
+$(document).ready(function(){
+	
+	$("#changePorfileBut").click(function(){
+		changePorfileBut = $("#changePorfileBut");
+		/*errorinfo = $("#errorinfo");*/
+		
+		
+		//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		var clipArea = new bjj.PhotoClip("#clipArea", {
+			size: [428, 321],// 截取框的宽和高组成的数组。默认值为[260,260]
+			outputSize: [428, 321], // 输出图像的宽和高组成的数组。默认值为[0,0]，表示输出图像原始大小
+			//outputType: "jpg", // 指定输出图片的类型，可选 "jpg" 和 "png" 两种种类型，默认为 "jpg"
+			file: "#changePorfileBut", // 上传图片的<input type="file">控件的选择器或者DOM对象
+			view: "#view", // 显示截取后图像的容器的选择器或者DOM对象
+			ok: "#clipBtn", // 确认截图按钮的选择器或者DOM对象
+			loadStart: function() {
+				// 开始加载的回调函数。this指向 fileReader 对象，并将正在加载的 file 对象作为参数传入
+				$('.cover-wrap').fadeIn();
+				console.log("照片读取中");
+			},
+			loadComplete: function() {
+				 // 加载完成的回调函数。this指向图片对象，并将图片地址作为参数传入
+				console.log("照片读取完成");
+			},
+			//loadError: function(event) {}, // 加载失败的回调函数。this指向 fileReader 对象，并将错误事件的 event 对象作为参数传入
+			clipFinish: function(dataURL) {
+				console.log(dataURL);
+				 // 裁剪完成的回调函数。this指向图片对象，会将裁剪出的图像数据DataURL作为参数传入
+				$('.cover-wrap').fadeOut();
+				$('#clipBtn').css('background-size','100% 100%');
+				imgURL = dataURL;
+				
+				dataURLtoBlob(imgURL);
+				
+//	imgURL有值			
+			},
+		});
+		//clipArea.destroy();
+	});
+	
+	
+	
+	
+	$("#clipBtn").click(function(blog, imgURL){
+		suc(blog, imgURL);
+		
+	})
+	
+});
+
+
+//dataURL转File
+function dataURLtoBlob(imgURL) {
+	
+    var arr = imgURL.split(','), mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+    while(n--){
+        u8arr[n] = bstr.charCodeAt(n);
+    }
+    blog =  new Blob([u8arr], {type:mime});
+    
+// blog有值，为Object类型  
+}
+
+
+function suc(blog, imgURL){
+	$.ajax({
+		url:"/gameTutor/log/upload",
+		type:"post",
+		data:{dataURL:blog,imgURL:imgURL},
+		dataType:"json",
+		async:true,
+		success:function(data){
+			if(data == "false"){
+				alert("更换失败！")
+			}
+			if(data == "error"){
+				location.href = "../signIn.jsp";
+			}
+			$("#view").attr('src',data); 
+		},
+		error:function(){
+			alert("未知错误")
+		}
+	})
+}

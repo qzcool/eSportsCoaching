@@ -35,7 +35,19 @@ function checkUserInfo(){
     }
 }
 
-
+var image = '';
+function selectImage(file) {
+    if (!file.files || !file.files[0]) {
+        return;
+    }
+    var reader = new FileReader();
+    reader.onload = function (evt) {
+        document.getElementById('profileID').src = evt.target.result;
+        document.getElementById('userProfile').src = evt.target.result;
+        image = evt.target.result;
+    }
+    reader.readAsDataURL(file.files[0]);
+}
 
 function createCanlenderTable(){
     var tbodyForAvailablity;
