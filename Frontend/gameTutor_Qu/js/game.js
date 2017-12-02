@@ -209,12 +209,13 @@ $(function () {
        
     });
     var disable = false;
+    $("#personList").css('display', 'none'); 
     $('#personalID').click(function () {
         if (disable) {
-            $("#personList").hide();
+            $("#personList").css('display', 'none'); 
             disable = false;
         } else {
-            $("#personList").show();
+            $("#personList").css('display', 'block'); 
             disable = true;
         }
 
