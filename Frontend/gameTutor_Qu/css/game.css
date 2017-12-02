@@ -80,10 +80,15 @@ form{
   display:block;
 }
 
-.nav-left{
-    float:left;
-    width:auto;
-    display:inline-block;
+.payment-options {
+    width:70px;
+    height:70px;
+}
+
+.nav-left {
+    float: left;
+    width: auto;
+    display: inline-block;
 }
 .gamerSearch {
     height: 32px;

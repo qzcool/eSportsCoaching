@@ -21,7 +21,16 @@
                 <div class="navbar-right input-group">
                     <ul id="menu">
                         <li><a href='searchSensei.html'>寻找先生</a></li>
-                        <li><a href="profile.html">个人中心</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
+                                个人中心
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" id="personList">
+                                <li><a href="profile.html">用户信息</a></li>
+                                <li><a href="../index.html">退出</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
