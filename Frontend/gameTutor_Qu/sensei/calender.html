@@ -19,16 +19,18 @@
     <div align="center" id="gameDiv">
         <nav class="navbar navbar-default navbar-fixed-top m-b-n">
             <div class="container-fluid">
-                <div class="gameLogo"></div>
-                <div class="navbar-right input-group">
-                    <ul id="menu">
-                        <li><a href=''>￥0.00</a></li>
+                <div class="col-xs-9">
+                    <div class="gameLogo"></div>
+                </div>
+                <div class="col-xs-3 nav-height">
+                    <ul id="menu" class="pull-right">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
                                 个人中心
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="personList">
+                            <ul class="dropdown-menu dropdown-menu-right" id="personList">
+                                <li><a href=''>￥0.00</a></li>
                                 <li><a href="profile.html">用户信息</a></li>
                                 <li><a href="../index.html">退出</a></li>
                             </ul>
@@ -121,21 +123,23 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-xs-2">
-                            <button class="calender-color-button confirmed-color"></button>
-                            <span class="calender-text-color">确认课程</span>
-                        </div>
-                        <div class="col-xs-2">
-                            <button class="calender-color-button cancelled-color"></button>
-                            <span class="calender-text-color">取消课程</span>
-                        </div>
-                        <div class="col-xs-2">
-                            <button class="calender-color-button awaited-color"></button>
-                            <span class="calender-text-color">等待</span>
-                        </div>
-                        <div class="col-xs-2">
-                            <button class="calender-color-button action-need-color"></button>
-                            <span class="calender-text-color">需要注意</span>
+                        <div class="col-xs-12">
+                            <div class="col-xs-3">
+                                <button class="calender-color-button confirmed-color"></button>
+                                <span class="calender-text-color">确认课程</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="calender-color-button cancelled-color"></button>
+                                <span class="calender-text-color">取消课程</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="calender-color-button awaited-color"></button>
+                                <span class="calender-text-color">等待</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="calender-color-button action-need-color"></button>
+                                <span class="calender-text-color">需要注意</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -43,6 +43,11 @@ form{
     background-repeat:no-repeat;
 }
 
+.nav-height{
+    height:50px;
+    padding-right:0 !important;
+}
+
 .index-search-btn {
     padding-top: 45px;
     padding-bottom: 45px;
