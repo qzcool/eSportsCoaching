@@ -30,3 +30,18 @@ function navigatorLoad(aHref,aText,liLength){
     li.appendChild(aT);
   }
 }
+
+var indexNav = ["登录","注册"];
+function initNav() {
+    var navId = document.getElementById('navicon-id');
+    var ul1 = document.createElement('ul');
+    ul1.setAttribute('id', 'menu');
+    ul1.setAttribute('class', 'pull-right');
+    navId.appendChild(ul1);
+    var li1 = document.createElement('li');
+    li1.setAttribute('class', 'dropdown');
+    ul1.appendChild(li1);
+    var a = document.createElement('a');
+    a.setAttribute('class', 'dropdown-toggle');
+    a.setAttribute('data-toggle','dropdown');
+}
