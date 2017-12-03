@@ -5,4 +5,4 @@
 AWS Could9: https://aws.amazon.com/cn/cloud9/
 
 ## 数据库
-PostgreSQL
+PostgreSQL on AWS
