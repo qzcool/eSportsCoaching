@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
+    "\\css",
     "\\gamer",
     "\\js",
+    "\\js\\game",
     "\\sensei"
   ],
-  "SelectedNode": "\\js\\game.js",
   "PreviewInSolutionExplorer": false
 }
