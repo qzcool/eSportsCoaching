@@ -208,5 +208,17 @@ $(function () {
         }
        
     });
+    var disable = false;
+    $("#personList").css('display', 'none'); 
+    $('#personalID').click(function () {
+        if (disable) {
+            $("#personList").css('display', 'none'); 
+            disable = false;
+        } else {
+            $("#personList").css('display', 'block'); 
+            disable = true;
+        }
+
+    });
 
 });

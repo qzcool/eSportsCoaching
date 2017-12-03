@@ -18,15 +18,21 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-default" role="navigation">
-            <div>
-                <div class="gameLogo">
-                </div>
+            <div class="col-xs-9">
+                <div class="gameLogo"></div>
             </div>
-            <div class="navbar-right input-group">
-                <ul id="menu">
-
-                    <li><a href='signIn.html'>登录</a></li>
-                    <li><a href='signUp.html'>注册</a></li>
+            <div class="col-xs-3 nav-height">
+                <ul id="menu" class="pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
+                            <span class="fa fa-navicon fa-2x"></span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" id="personList">
+                            <li><a href='signIn.html'>登录</a></li>
+                            <li><a href='signUp.html'>注册</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="clearfix"></div>
