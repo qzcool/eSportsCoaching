@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.fengjr.web.dao.ProcessMonitorMapper">
+    <select id="getProcessStatus" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select count(*) from crawler_progress where step1 = #{step1,jdbcType=VARCHAR} and
+        step2 = #{step2,jdbcType=VARCHAR} and start_time between #{start,jdbcType=TIMESTAMP} and #{end,jdbcType=TIMESTAMP} and
+        code in
+        <foreach collection="codes" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+</mapper>
