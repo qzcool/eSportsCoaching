@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    <!-- 该文件用于配置特定的servlet（DispatcherServlet）,其可以引用applicationContex.xml中的bean,局部配置，作用域为当前的servlet-->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+    <!--配置Controller的组件扫描器和视图解析器-->
+    <!-- 0.自动加载RequestMappingHandlerMapping和RequestMappingHandlerAdapter -->
+    <mvc:annotation-driven/>
+
+    <!-- 定时器驱动-->
+    <task:annotation-driven scheduler="taskScheduler"/>
+    <task:scheduler id="taskScheduler" pool-size="5"/>
+
+    <!-- 1.bean扫描：controller-->
+    <context:component-scan base-package="com.esports.*"/>
+
+    <!-- 2.视图解析器-->
+
+    <!-- 3.静态资源文件配置 -->
+    <mvc:resources mapping="/static/**" location="WEB-INF/static/"/>
+    <!-- html视图：意思是当url匹配到/views/**，其实访问的是/WEB-INF/views/**-->
+    <mvc:resources mapping="/views/**" location="/WEB-INF/views/"/>
+
+</beans>
