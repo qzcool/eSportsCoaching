@@ -1,4 +1,4 @@
-var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
+﻿var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
 var users = [{
     name: "qxy",
     pwd: "123456",
@@ -218,7 +218,28 @@ $(function () {
             $("#personList").css('display', 'block'); 
             disable = true;
         }
-
     });
 
+    
+    var diableGame = false;
+    $("#gameList").css('display', 'none');
+    $("#gameNameI").click(function () {
+        if (diableGame) {
+            $("#gameList").css('display', 'none');
+            diableGame = false;
+        } else {
+            $("#gameList").css('display', 'block');
+            diableGame = true;
+        }
+    });
+
+    var bTmp = $("<b></b>");
+    bTmp.addClass("caret caret-right");
+    
+    $("#playerUnkonwn").click(function () {
+        $("#gameNameI").text('绝地求生');
+        $("#gameNameI").append(bTmp);
+        $("#gameList").css('display', 'none');
+        diableGame = false;
+    });
 });

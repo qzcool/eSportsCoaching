@@ -101,11 +101,16 @@
                                     <input id="screenNameI" class="profile-input"/>
                                 </div>
                                 <div class="profile-input-box blockStyle">
-                                    <label for="gameNameI" class="blockStyle">游戏名字</label>
-                                    <input id="gameNameI" class="profile-input"/>
+                                    <label class="blockStyle">游戏名字</label>
+                                    <span id="gameNameI" class="profile-input dropdown-toggle" data-toggle="dropdown"><b class="caret caret-right"></b> </span>                                
+                                    <div class="dropdown-menu gameNameList" id="gameList">
+                                        <ul class="left-gameList-show">
+                                            <li><div class="gameImageI"><img class="img-responsive" src="../images/game2.png" id="playerUnkonwn" /></div></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="profile-input-introduce-box blockStyle">
-                                    <label for="userNameII" class="blockStyle">自我介绍</label>
+                                    <label for="userNameII" class="blockStyle" >自我介绍</label>
                                     <input id="userNameII" class="profile-input-introduce"/>
                                 </div>
                             </form>
@@ -118,6 +123,7 @@
         </div>
         <script language="JavaScript" src="../js/game.js"></script>
         <script language="JavaScript" src="../js/game/bottomPage.js"></script>
+        <script language="JavaScript" src="../js/game/profile.js"></script>
     </div>
 </body>
 </html>
