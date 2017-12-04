@@ -198,7 +198,6 @@ form{
 }
 .listInfo, .index-left p {
     border-top: 1px solid #e3e3e4;
-    border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
 }
 
@@ -216,7 +215,6 @@ form{
 .index-left li {
     list-style: none;
     padding: 8px 0;
-    margin-left:-40px;
 }
 .index-left li h4{
     margin: 0;
@@ -231,6 +229,7 @@ form{
 .index-left {
     background: #0E1D4E;
     padding: 20px 0 20px 0;
+    height:100% !important;
 }
 
 .index-search-left {
