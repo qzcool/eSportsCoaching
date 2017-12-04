@@ -197,7 +197,7 @@ form{
 }
 
 .listInfo, .index-left p {
-    border-top: 1px solid #e3e3e4;
+    border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
 }
 /*course title in profile page*/
