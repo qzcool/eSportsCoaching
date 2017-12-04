@@ -537,16 +537,24 @@ form{
   padding-top:20px;
 }
 
-.input-index-user{
-  border:1px solid #e3e3e4;
-  border-radius:4px;
-  width:100%;
-  height:40px;
-  margin-top:10px;
+.input-index-user {
+    border: 1px solid #e3e3e4;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
 }
-.forgotSecret{
-  text-align:right;
-  display:block;
+
+.verify-text {
+    padding: 0 0 !important;
+    border: none;
+    height: 38px;
+    line-height:38px !important;
+}
+
+.forgotSecret {
+    text-align: right;
+    display: block;
 }
 .button-signIn{
   color:#FFF;
@@ -563,7 +571,7 @@ form{
   text-align:center;
 }
 .input-selection{
-  width:60%;
+  width:80%;
 }
 
 .imageInline{
@@ -638,6 +646,7 @@ form{
   margin-top:20px;
   border:1px solid #e3e3e4;
   height:100%;
+  border-radius:4px;
 }
 .selection-header{
   display:block;
@@ -697,6 +706,13 @@ form{
 .selectRole {
     padding-top:10px;
 }
+
+.verify-info {
+    background-color: #428bca;
+    text-align:center;
+    color:white;
+}
+
 .profile-input {
     float: left;
     width: 100%;

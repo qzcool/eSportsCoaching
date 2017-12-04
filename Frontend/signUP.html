@@ -36,28 +36,34 @@
           <div class="clearfix"></div>
       </div>
     </nav>
-    <div class="col-xs-7 col-xs-offset-2 gameContent padding-index">
+    <div class="col-xs-6 col-xs-offset-3 gameContent padding-index">
       <form class="selectionInfo">
           <div class="input-selection">
-            <input type="email" class="input-index-user" placeholder="电子邮件地址" id="userName" required>
-            <input type="password" class="input-index-user" placeholder="密码" id="userPwd" required>
-            <div class="col-xs-6 selectRole">
+            <input type="email" class="input-index-user" placeholder="电子邮件或手机号" id="userName" required>
+            <input type="text" class="input-index-user" placeholder="您的名字" id="nickName" required>
+              <div class="input-index-user">
+                  <input type="password" placeholder="请输入密码" id="userPwd" class="col-xs-11 verify-text" required>
+                  <span class="fa fa-eye fa-2x col-xs-1 verify-text" id="eyeIcon"></span>
+              </div>               
+              <div class="input-index-user">
+                <input type="text" id="verifyCode" class="col-xs-8 verify-text" />
+                <input type="button" value="获取验证码" id="getVerifyCode" class="verify-info col-xs-4 verify-text" />
+              </div>
+              <div class="col-xs-6 selectRole">
                 <input type="radio" name="optionsRadios" id="optionsSensei" value="sensei" checked> 先生
-            </div>
-            <div class="col-xs-6 selectRole">
+              </div>
+              <div class="col-xs-6 selectRole">
                 <input type="radio" name="optionsRadios" id="optionsStu" value="student">学员
-            </div>
+              </div>
         </div>
         <button class="button-signIn" onclick="signUpUser()">注册</button>
         <p>已有账户，请<a href="signIn.html">登录</a></p>
     </form>
-    <p class="signIn-p">点击注册，您已同一游戏先生的相关条款和隐私协议</a></p>
+    <p class="signIn-p">点击注册，您已同意<a>游戏先生的相关条款和隐私协议</a></p>
     <p class="signIn-p">想成为先生，来这里<a id="signUpToSensei">注册</a></p>
    </div>
   </div>
   <script language="JavaScript" src="js/game.js"></script>
-<!-- Qiao's Added Part-->
-  <script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-  <script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script language="JavaScript" src="js/game/signUp.js"></script>
 </body>
 </html>
