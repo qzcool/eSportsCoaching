@@ -694,11 +694,14 @@ form{
   height:80px;
   padding:10px 0;
 }
+.selectRole {
+    padding-top:10px;
+}
 .profile-input {
     float: left;
     width: 100%;
     height: 35px;
-    line-height:35px;
+    line-height: 35px;
     border: 1px solid #e3e3e4;
     border-radius: 5px;
     background-color: white;

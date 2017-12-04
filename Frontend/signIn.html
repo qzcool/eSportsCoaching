@@ -43,9 +43,15 @@
       <h1 id="applyToBe"></h1>
       <form class="selectionInfo">
           <div class="input-selection">
-          <input type="email" class="input-index-user" placeholder="电子邮件地址" id="userName" required>
-          <input type="password" class="input-index-user" placeholder="密码" id="userPwd" required>
-          <span class="forgotSecret">忘记密码</span>
+              <input type="email" class="input-index-user" placeholder="电子邮件地址" id="userName" required>
+              <input type="password" class="input-index-user" placeholder="密码" id="userPwd" required>
+              <div class="col-xs-6 selectRole">
+                  <input type="radio" name="optionsRadios" id="optionsSensei" value="sensei" checked> 先生
+              </div>
+              <div class="col-xs-6 selectRole">
+                  <input type="radio" name="optionsRadios" id="optionsStu" value="student">学员
+              </div>
+              <span class="forgotSecret">忘记密码</span>
         </div>
         <button class="button-signIn" onclick="checkUserInfo()">登录</button>
       <!-- <button type="submit" onclick="checkUserInfo()">登陆</button>
