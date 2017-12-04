@@ -28,6 +28,5 @@ getVerifyCode.onclick = function () {
             count = 60;
         }
     }, 1000);
-
 }
 
