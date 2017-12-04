@@ -140,9 +140,7 @@ form{
     height:30px;
     color: forestgreen;
 }
-.fa-2x{
-    font-size:20px;
-}
+
 .result-list {
     text-align: left;
     margin-top:20px;
@@ -174,8 +172,13 @@ form{
     height: 100%;
     width: 100%;
 }
+
+.icon-color-profile {
+    color:white;
+}
+
 .search-list-view {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .response p{
@@ -192,20 +195,21 @@ form{
     width: 60%;
     left:-60px;
 }
-.bg-img {
-    /*在这里写入背景图*/
-    background: url(..) no-repeat;
-}
+
 .listInfo, .index-left p {
     border-top: 1px solid #e3e3e4;
-    border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
+}
+/*course title in profile page*/
+.course-title {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .sensei-profile-div {
     border-top: 1px solid #e3e3e4;
     border-bottom: 1px solid #e3e3e4;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 .text-center {
     margin-bottom: 10px;
@@ -216,7 +220,6 @@ form{
 .index-left li {
     list-style: none;
     padding: 8px 0;
-    margin-left:-40px;
 }
 .index-left li h4{
     margin: 0;
@@ -231,6 +234,7 @@ form{
 .index-left {
     background: #0E1D4E;
     padding: 20px 0 20px 0;
+    height:100% !important;
 }
 
 .index-search-left {
@@ -275,8 +279,13 @@ form{
     margin-bottom:10px;
 }
 
-.half-height{
-    height:50%;
+.vector-diagram-set {
+    width:50px;
+    height:50px;
+}
+
+.half-height {
+    height: 50%;
 }
 
 .pricing-margin {
