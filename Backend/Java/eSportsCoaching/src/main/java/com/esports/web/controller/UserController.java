@@ -2,34 +2,23 @@ package com.esports.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Description:
  * Author: XJD
- * Date: 2017-09-02 16:55
+ * Date: 2017/12/05
  */
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
-    @RequestMapping("/login")
-    public String login() {
-        return "forward:/views/login.html";
+    @RequestMapping("/gamer/profile")
+    public String gamerProfile(){
+        return "forward:/views/gamer/profile.html";
     }
 
-    @RequestMapping("/logout")
-    @ResponseBody
-    public String logout() {
-
-        return null;
+    @RequestMapping("/sensei/profile")
+    public String senseiProfile(){
+        return "forward:/views/sensei/profile.html";
     }
-
-    @RequestMapping("/register")
-    @ResponseBody
-    public String register() {
-
-        return null;
-    }
-
 }

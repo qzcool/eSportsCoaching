@@ -1,3 +1,4 @@
+
 $(function () {
     $("#datetimepicker1").datetimepicker({
         format: "yyyy-mm-dd",
@@ -19,4 +20,6 @@ $(function () {
     // document.getElementById("nowdate").value = mydate;
 
     $(".dropdown-toggle").dropdown('toggle');
+
+    $("#canlender-titile").text(date.getFullYear() + '.' + mon);
 });

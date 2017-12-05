@@ -1,4 +1,4 @@
-var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
+﻿var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
 var users = [{
     name: "qxy",
     pwd: "123456",
@@ -18,21 +18,7 @@ function checkUserInfo(){
       alert("请输入您的用户名或密码");
       return;
     }
-    for(var i=0; i<users.length; i++){
-      if(users[i].name===userText){
-          if(pwdText === users[i].pwd){
-              alert("登录成功");
-              if (users[i].type === "STU") {
-                  window.location.href = "gamer/profile.html";
-              } else if (users[i].type === "SEN") {
-                  window.location.href = "sensei/profile.html";
-              }
-          }else{
-             alert("用户名或密码错误");
-          }
-          return;
-      }
-    }
+    window.location.href="/account/login";
 }
 
 var image = '';
@@ -126,7 +112,7 @@ function createAvailablityTable(){
 createAvailablityTable();
 
 function signUpUser(){
-    window.location.href="signUp.html";
+    window.location.href="/account/register";
 }
 /*add optional games*/
 function addOptionsForSelect(){
@@ -218,7 +204,28 @@ $(function () {
             $("#personList").css('display', 'block'); 
             disable = true;
         }
-
     });
 
+    
+    var diableGame = false;
+    $("#gameList").css('display', 'none');
+    $("#gameNameI").click(function () {
+        if (diableGame) {
+            $("#gameList").css('display', 'none');
+            diableGame = false;
+        } else {
+            $("#gameList").css('display', 'block');
+            diableGame = true;
+        }
+    });
+
+    var bTmp = $("<b></b>");
+    bTmp.addClass("caret caret-right");
+    
+    $("#playerUnkonwn").click(function () {
+        $("#gameNameI").text('绝地求生');
+        $("#gameNameI").append(bTmp);
+        $("#gameList").css('display', 'none');
+        diableGame = false;
+    });
 });

@@ -34,13 +34,13 @@ form{
     background-color:rgb(255,255,255);
 }
 .gameLogo {
-    display:block;
+    display: block;
     width: 200px;
     height: 50px;
     float: left;
     text-align: center;
-    background-image:url(../images/gameLogo.png);
-    background-repeat:no-repeat;
+    background-image: url(../images/gameLogo.png);
+    background-repeat: no-repeat;
 }
 
 .nav-height{
@@ -140,9 +140,7 @@ form{
     height:30px;
     color: forestgreen;
 }
-.fa-2x{
-    font-size:20px;
-}
+
 .result-list {
     text-align: left;
     margin-top:20px;
@@ -174,8 +172,13 @@ form{
     height: 100%;
     width: 100%;
 }
+
+.icon-color-profile {
+    color:white;
+}
+
 .search-list-view {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .response p{
@@ -192,20 +195,21 @@ form{
     width: 60%;
     left:-60px;
 }
-.bg-img {
-    /*在这里写入背景图*/
-    background: url(..) no-repeat;
-}
+
 .listInfo, .index-left p {
-    border-top: 1px solid #e3e3e4;
     border-bottom: 1px solid #e3e3e4;
     padding: 12px 0 8px 0;
+}
+/*course title in profile page*/
+.course-title {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .sensei-profile-div {
     border-top: 1px solid #e3e3e4;
     border-bottom: 1px solid #e3e3e4;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 .text-center {
     margin-bottom: 10px;
@@ -216,7 +220,6 @@ form{
 .index-left li {
     list-style: none;
     padding: 8px 0;
-    margin-left:-40px;
 }
 .index-left li h4{
     margin: 0;
@@ -231,6 +234,7 @@ form{
 .index-left {
     background: #0E1D4E;
     padding: 20px 0 20px 0;
+    height:100% !important;
 }
 
 .index-search-left {
@@ -275,8 +279,13 @@ form{
     margin-bottom:10px;
 }
 
-.half-height{
-    height:50%;
+.vector-diagram-set {
+    width:50px;
+    height:50px;
+}
+
+.half-height {
+    height: 50%;
 }
 
 .pricing-margin {
@@ -461,6 +470,12 @@ form{
 .calender-button{
   float:right;
 }
+
+.caret-right{
+    float:right;
+    margin-top:15px;
+}
+
 .img_index{
   width:30%;
   height:150px;
@@ -531,16 +546,24 @@ form{
   padding-top:20px;
 }
 
-.input-index-user{
-  border:1px solid #e3e3e4;
-  border-radius:4px;
-  width:100%;
-  height:40px;
-  margin-top:10px;
+.input-index-user {
+    border: 1px solid #e3e3e4;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
 }
-.forgotSecret{
-  text-align:right;
-  display:block;
+
+.verify-text {
+    padding: 0 0 !important;
+    border: none;
+    height: 38px;
+    line-height:38px !important;
+}
+
+.forgotSecret {
+    text-align: right;
+    display: block;
 }
 .button-signIn{
   color:#FFF;
@@ -557,7 +580,7 @@ form{
   text-align:center;
 }
 .input-selection{
-  width:60%;
+  width:80%;
 }
 
 .imageInline{
@@ -632,6 +655,7 @@ form{
   margin-top:20px;
   border:1px solid #e3e3e4;
   height:100%;
+  border-radius:4px;
 }
 .selection-header{
   display:block;
@@ -688,18 +712,48 @@ form{
   height:80px;
   padding:10px 0;
 }
-.profile-input{
-   float:left;
-   width:100%;
-   height:35px;
-   border:1px solid #e3e3e4;
-   border-radius:5px;
+.selectRole {
+    padding-top:10px;
 }
+
+.verify-info {
+    background-color: #428bca;
+    text-align:center;
+    color:white;
+}
+
+.profile-input {
+    float: left;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #e3e3e4;
+    border-radius: 5px;
+    background-color: white;
+}
+/*show game name list in profile page*/
+.gameNameList {
+    width:100%;
+    height:auto;
+    top:60% !important;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.left-gameList-show {
+    padding-left:10px !important;
+}
+
+.gameImageI {
+    width: 60px;
+    height: 60px;
+}
+
 .sensei-achievement-input {
-    border:none;
-    height:33px;
-    float:left;
-    width:77%;
+    border: none;
+    height: 33px;
+    float: left;
+    width: 77%;
 }
 .sensei-achievement-btn {
     float: right;
@@ -742,7 +796,7 @@ label{
   width:100%;
 }
 .formLeft{
-  padding-left:10px;
+  padding-right:0 !important;
 }
 li{
    list-style-type:none;
@@ -759,7 +813,7 @@ li{
 }
 
 .profile-page-bottom {
-    margin-top:20px;
+    margin-top:80px;
     padding-left:0 !important;
     padding-right:0 !important;
 }

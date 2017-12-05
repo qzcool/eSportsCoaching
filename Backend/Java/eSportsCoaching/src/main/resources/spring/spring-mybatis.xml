@@ -49,7 +49,7 @@
 
     <!--3.spring对mybatis进行管理，并自动扫描mapper-->
     <bean id="daoMapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.fengjr.web.dao"/>
+        <property name="basePackage" value="com.esports.web.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
