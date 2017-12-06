@@ -43,6 +43,10 @@ form{
     background-repeat: no-repeat;
 }
 
+.siderList_text{
+  color:white;
+}
+
 .nav-height{
     height:50px;
     padding-right:0 !important;
@@ -627,7 +631,7 @@ form{
 }
 .saving-btn-pricing {
     padding-right: 0 !important;
-} 
+}
 .selectYourGame {
     border: none;
     /*appearance:none;
