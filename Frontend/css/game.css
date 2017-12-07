@@ -43,7 +43,7 @@ form{
     height: 50px;
     float: left;
     text-align: center;
-    background-image: url(../images/gameLogo.png);
+    background-image: url(../images/gameLogo.PNG);
     background-repeat: no-repeat;
 }
 
@@ -494,6 +494,7 @@ form{
   text-align:center;
   margin:30px 5px;
   border-radius:4px;
+  color:#02b3e4;
 }
 .scaleButton{
   color:#fff;
@@ -818,7 +819,7 @@ form{
     height: 100%;
 }
 .index-backgroundImage {
-    background-image: url("../images/index-backroundImage.png");
+    background-image: url("../images/index-backroundImage.JPG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center bottom, center center;
