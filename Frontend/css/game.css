@@ -12,12 +12,16 @@ select {
     align-items: center;
     white-space: pre;
     color: black;
-    background-color: #EEEEEE;
 }
+
 input,textarea,select,button{
     text-rendering:auto;
     text-align:start;
     font:18px Arial;
+}
+
+option{
+  padding-top:5px !important;
 }
 
 form{
@@ -56,13 +60,24 @@ form{
     padding-top: 45px;
     padding-bottom: 45px;
 }
+/*show gamer*/
 .text-index-player {
     border: 1px solid #e3e3e4;
-    height:100%;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    border-radius:10px;
+}
+.gamer-image{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .searchChoice {
     height: 36px;
     position: relative;
+}
+
+.margin-index{
+  margin-top:40px;
 }
 .search-navbar-search-wrapper #search-navbar-search .nav-search-scope .facade-selector-wrapper .nav-left{
     background-color:#ECECED;
@@ -478,6 +493,7 @@ form{
   font-size:35px;
   text-align:center;
   margin:30px 5px;
+  border-radius:4px;
 }
 .scaleButton{
   color:#fff;
@@ -645,7 +661,11 @@ form{
     padding-right: 0 !important;
 }
 .selectYourGame {
-    border: none;
+    padding:10px 10px;
+    border: 1px solid #e3e3e4;
+    border-radius:4px;
+    height:80px;
+    line-height:80px;
     /*appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;*/
@@ -710,12 +730,12 @@ form{
 .hero-header{
   font-size:55px;
   line-height:55px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .hero-select{
   font-size:45px;
   line-height:45px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .pDisplayInline{
   display:inline-block;
@@ -791,7 +811,7 @@ form{
   height:150px;
 }
 .padding-index{
-  padding-top:100px;
+  padding-top:80px;
 }
 .selection-height {
     width:100%;
