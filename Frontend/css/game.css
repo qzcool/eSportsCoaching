@@ -80,6 +80,7 @@ form{
 .font-green {
     color: green;
 }
+
 .find-sensei-img{
    width:206px;
    height:39px;
@@ -143,6 +144,17 @@ form{
     width: 9%;
     height:30px;
     color: forestgreen;
+}
+/*about us in index page*/
+.font-aboutUs{
+  color:#02b3e4;
+  text-align:center;
+}
+
+.aboutUsImg{
+  border-radius:10px;
+  border:1px solid #e3e3e4;
+  width:250px;
 }
 
 .result-list {
