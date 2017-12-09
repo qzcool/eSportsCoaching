@@ -41,7 +41,7 @@
     </nav>
     <div class="col-xs-6 col-xs-offset-3 gameContent padding-index">
       <h1 id="applyToBe"></h1>
-      <form class="selectionInfo" method="post/get" action="login.action">
+      <form class="selectionInfo" method="post">
           <div class="input-selection">
               <input type="email" class="input-index-user" placeholder="电子邮件或手机号" id="userName" required>
               <input type="password" class="input-index-user" placeholder="密码" id="userPwd" required>
@@ -53,7 +53,7 @@
               </div>
               <span class="forgotSecret">忘记密码</span>
         </div>
-        <input class="button-signIn" onclick="checkUserInfo()" type="submit">登录</button>
+        <input class="button-signIn" onclick="checkUserInfo(this.form)" type="submit">登录</button>
       <!-- <button type="submit" onclick="checkUserInfo()">登陆</button>
       <button type="submit" onclick="signUpUser()">注册</button> -->
 

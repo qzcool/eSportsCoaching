@@ -11,28 +11,22 @@ var users = [{
 
 
 /*check user name and user password in sign in*/
-function checkUserInfo(){
+function checkUserInfo(form){
     var userText=document.getElementById("userName").value;
     var pwdText=document.getElementById("userPwd").value;
+    var role;
+    if(docuemnt.getElementById("optionsSensei").checked){
+      role = docuemnt.getElementById("optionsSensei").value;
+    }
+    if(docuemnt.getElementById("optionsStu").checked){
+      role = docuemnt.getElementById("optionsStu").value;
+    }
     if(userText==="" || pwdText===""){
       alert("请输入您的用户名或密码");
       return;
     }
-    for(var i=0; i<users.length; i++){
-      if(users[i].name===userText){
-          if(pwdText === users[i].pwd){
-              alert("登录成功");
-              if (users[i].type === "STU") {
-                  window.location.href = "gamer/profile.html";
-              } else if (users[i].type === "SEN") {
-                  window.location.href = "sensei/profile.html";
-              }
-          }else{
-             alert("用户名或密码错误");
-          }
-          return;
-      }
-    }
+    form.action="<%=path%>/account/login.action?userName="+userText+"&passWord="+pwdText+"&role="+role;
+    form.submit();
 }
 
 var image = '';
