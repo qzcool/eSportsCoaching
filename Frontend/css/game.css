@@ -1,9 +1,8 @@
 body {
-    font-family: arial,helvetica,sans-serif;
+    font-family: -apple-system,SF UI Text, arial,helvetica,sans-serif;
 }
 
 button, input, select, textarea {
-    font-family: Arial;
     font-size: 100%;
     border-color: #e3e3e4;
 }
