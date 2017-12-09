@@ -30,7 +30,16 @@ function checkUserInfo(){
     }
     var url = "/account/login?username="+userText+"&password="+pwdText+"&role="+role;
     window.location.href=url;
+}
 
+function checkUserId(){
+    var verifyCode=document.getElementById("verifyCode").innerHTML;
+    if(verifyCode===""){
+      alert("请输入验证码");
+      return;
+    }
+    var url= "/identify/sendCode?username="+verifyCode;
+    window.location.href=url;
 }
 
 var image = '';
@@ -122,9 +131,25 @@ function createAvailablityTable(){
     }
 }
 createAvailablityTable();
-
+/*add sign up information*/
 function signUpUser(){
-    window.location.href="signUp.html";
+  var userText=document.getElementById("userName").value;
+  var nickName=document.getElementById("nickName").value;
+  var pwdText=document.getElementById("userPwd").value;
+  var role;
+  if(document.getElementById("optionsSensei").checked){
+    role = document.getElementById("optionsSensei").value;
+  }
+
+  if(document.getElementById("optionsStu").checked){
+    role = document.getElementById("optionsStu").value;
+  }
+  if(userText==="" || pwdText===""){
+    alert("请输入您的用户名或密码");
+    return;
+  }
+  var url = "/account/register?username="+userText+"&password="+pwdText+"&role="+role;
+  window.location.href=url;
 }
 /*add optional games*/
 function addOptionsForSelect(){

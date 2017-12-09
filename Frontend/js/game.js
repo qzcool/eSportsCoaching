@@ -12,20 +12,20 @@ var users = [{
 
 /*check user name and user password in sign in*/
 function checkUserInfo(form){
-    var userText=document.getElementById("userName").value;
-    var pwdText=document.getElementById("userPwd").value;
+    var username = document.getElementById("userName").value;
+    var password = document.getElementById("userPwd").value;
     var role;
     if(docuemnt.getElementById("optionsSensei").checked){
-      role = docuemnt.getElementById("optionsSensei").value;
+      role = document.getElementById("optionsSensei").value;
     }
     if(docuemnt.getElementById("optionsStu").checked){
-      role = docuemnt.getElementById("optionsStu").value;
+      role = document.getElementById("optionsStu").value;
     }
-    if(userText==="" || pwdText===""){
+    if(username==="" || password===""){
       alert("请输入您的用户名或密码");
       return;
     }
-    form.action="<%=path%>/account/login?userName="+userText+"&passWord="+pwdText+"&role="+role;
+    form.action="<%=path%>/account/login?username="+username+"&password="+password+"&role="+role;
     form.submit();
 }
 
