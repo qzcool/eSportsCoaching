@@ -23,20 +23,15 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="col-xs-9">
                 <div class="gameLogo"></div>
+                <div class="col-xs-2 font-setting">陪练</div>
+                <div class="col-xs-2 font-setting">游戏文档</div>
+                <div class="col-xs-2 font-setting"><a href="aboutUs.html">关于我们</a></div>
             </div>
             <div class="col-xs-3 nav-height" id="navicon-id">
-                <ul id="menu" class="pull-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
-                            <span class="fa fa-navicon fa-2x"></span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" id="personList">
-                            <li><a href='signIn.html'>登录</a></li>
-                            <li><a href='signUp.html'>注册</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="pull-right">
+                    <div class="col-xs-6 font-setting"><a href='signIn.html'>登录</a></div>
+                    <div class="col-xs-6 font-setting"><a href='signUp.html'>注册</a></div>
+               </div>
             </div>
             <div class="clearfix"></div>
         </nav>
@@ -45,10 +40,9 @@
         <div class="gameContent padding-index">
             <selection class="text-center">
                 <h1 class="hero-header">来提升你的技能吧！</h1>
-                <h2 class="hero-select">
+                <h2 class="hero-select">我想提升
                     <select class="selectYourGame" id="gameOptional">
-                        <option value="" selected="">我想提升</option>
-                        <option value=""> 绝地求生</option>
+                        <option value="" selected=""> 绝地求生</option>
                         <option value=""> 王者荣耀</option>
                         <option value=""> 英雄联盟</option>
                     </select>
@@ -77,26 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 margin-index">
-            <h1 class="font-aboutUs">关于我们</h1>
-              <div class="col-xs-6">
-                <img src="images/aboutUs.jpg" class="aboutUsImg img-responsive pull-right"/>
-              </div>
-              <div class="col-xs-6">
-                <p>游戏先生是一款移动端娱乐电竞社交APP，旨在打造“国内第一娱乐电竞社交平台”。</p>
-                <p>产品于2017年6月正式上线，通过高效便捷的方式连接游戏高玩与普通玩家，真正实现了玩家们随时随地可进行技能变现、电竞教学、娱乐社交等内容。</p>
-                <p>被媒体称为“电竞滴滴”。在之后的版本更迭中，游戏先生会更深入挖掘用户痛点，衍生探索更多可能性，逐步成为电竞泛娱乐第一品牌。</p>
-              </div>
-        </div>
-        <div class="col-xs-12 margin-index">
-            <h1 class="font-aboutUs">我们的服务</h1>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="text-index-player">
-                    <p>一对一游戏技能辅导</p>
-                </div>
-            </div>
 
-        </div>
         <div class="col-xs-12 margin-index">
             <h1 class="font-aboutUs">学员成果</h1>
             <div class="col-xs-12 index-padding-setting">
@@ -112,7 +87,6 @@
         <div class="col-xs-12 margin-index">
             <h1 class="font-aboutUs">客户评价</h1>
             <div class="col-xs-12 index-padding-setting">
-
                 <div class="col-xs-3">
                     <img src="images/player1.png" class="img-responsive" />
                 </div>
@@ -136,10 +110,18 @@
             <h1 class="font-aboutUs">我们的导师</h1>
             <div class="col-xs-12 index-padding-setting">
                 <div class="col-xs-3">
-                    <img src="images/player1.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
+                    <img src="images/player1.png" class="img-responsive tutorImage-index" />
+                    <div class="col-xs-12">
+                      <div>王三</div>
+                      <span class="rating evaluate-sensei center-block">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                      </span>
+                      <div>王者荣耀-青铜</div>
+                    </div>
                 </div>
             </div>
             <button type="button" class="btn btn-info center-block" id="searchSenseiIndex">寻找先生</button>
@@ -180,7 +162,6 @@
                     <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-wechat fa-2x"></i> </span>
                     <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-qq fa-2x"></i> </span>
                     <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-weibo fa-2x"></i> </span>
-                    <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-instagram fa-2x"></i> </span>
                 </div>
             </div>
             <p class="text-center">© 2017 游戏先生版权所有.</p>

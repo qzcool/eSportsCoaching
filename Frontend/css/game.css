@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system,SF UI Text, arial,helvetica,sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
 button, input, select, textarea {
@@ -53,6 +53,17 @@ form{
 .nav-height{
     height:50px;
     padding-right:0 !important;
+}
+
+.tutorImage-index{
+  border-radius:50%;
+}
+.font-setting{
+  line-height:50px;
+}
+
+.evaluate-sensei{
+  width:50%;
 }
 
 .index-search-btn {
