@@ -2,6 +2,10 @@ body {
   font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
+a{
+  cursor:pointer;
+}
+
 button, input, select, textarea {
     font-size: 100%;
     border-color: #e3e3e4;
@@ -48,6 +52,7 @@ form{
     text-align: center;
     background-image: url(../images/gameLogo.PNG);
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .siderList_text{
