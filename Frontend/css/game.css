@@ -36,6 +36,10 @@ form{
     width:100%;
     background-color:rgb(255,255,255);
 }
+
+.center-text{
+  text-align:center;
+}
 .gameLogo {
     display: block;
     width: 200px;
@@ -48,6 +52,10 @@ form{
 
 .siderList_text{
   color:white;
+}
+
+.player-name{
+  color: #e09a22;
 }
 
 .nav-height{
@@ -63,7 +71,12 @@ form{
 }
 
 .evaluate-sensei{
-  width:50%;
+  width:90%;
+  text-align:center;
+}
+
+.margin-tutor-index{
+  margin-top:10px;
 }
 
 .index-search-btn {
@@ -77,6 +90,11 @@ form{
     padding-right:0 !important;
     border-radius:10px;
 }
+
+.gamer-result-show{
+    border-radius:4px;
+}
+
 .gamer-image{
   border-radius: 10px;
   background-image:url(../images/game0.png)
