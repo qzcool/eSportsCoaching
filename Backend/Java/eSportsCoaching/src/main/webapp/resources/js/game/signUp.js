@@ -34,10 +34,11 @@ getVerifyCode.onclick = function () {
 /*verify user id*/
 function checkUserId(form){
     var verifyCode=document.getElementById("verifyCode").innerHTML;
+    var userText=document.getElementById("userName").value;
     if(verifyCode===""){
       alert("请输入验证码");
       return;
     }
-    form.action= "/identify/sendCode?username="+verifyCode;
+    form.action= "/identify/sendCode?username="+userText+"code="+verifyCode;
     form.submit();
 }
