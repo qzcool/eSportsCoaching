@@ -31,7 +31,7 @@ function checkUserInfo(){
     var url = "/account/login?username="+userText+"&password="+pwdText+"&role="+role;
     window.location.href=url;
 }
-
+/*verify user id*/
 function checkUserId(){
     var verifyCode=document.getElementById("verifyCode").innerHTML;
     if(verifyCode===""){
