@@ -37,26 +37,26 @@
       </div>
     </nav>
     <div class="col-xs-6 col-xs-offset-3 gameContent padding-index">
-      <form class="selectionInfo">
+      <form class="selectionInfo" action="/account/register" method="post">
           <div class="input-selection">
-            <input type="email" class="input-index-user" placeholder="电子邮件或手机号" id="userName" required>
-            <input type="text" class="input-index-user" placeholder="您的名字" id="nickName" required>
+            <input type="email" class="input-index-user" placeholder="电子邮件或手机号" id="userName" name="username" required>
+            <input type="text" class="input-index-user" placeholder="您的名字" id="nickName" name="nickname" required>
               <div class="input-index-user">
-                  <input type="password" placeholder="请输入密码" id="userPwd" class="col-xs-11 verify-text" required>
+                  <input type="password" placeholder="请输入密码" id="userPwd" class="col-xs-11 verify-text" name="password" required>
                   <span class="fa fa-eye fa-2x col-xs-1 verify-text" id="eyeIcon"></span>
               </div>
               <div class="input-index-user">
-                <input type="text" id="verifyCode" class="col-xs-8 verify-text" />
+                <input type="text" id="verifyCode" class="col-xs-8 verify-text" name="code"/>
                 <input type="button" value="获取验证码" id="getVerifyCode" class="verify-info col-xs-4 verify-text" onclick="checkUserId()"/>
               </div>
               <div class="col-xs-6 selectRole">
-                <input type="radio" name="optionsRadios" id="optionsSensei" value="sensei" checked> 先生
+                <input type="radio" name="optionsRadios" id="optionsSensei" value="sensei" name="role" checked> 先生
               </div>
               <div class="col-xs-6 selectRole">
-                <input type="radio" name="optionsRadios" id="optionsStu" value="student"> 学员
+                <input type="radio" name="optionsRadios" id="optionsStu" value="student" name="role"> 学员
               </div>
         </div>
-        <button class="button-signIn" onclick="signUpUser()">注册</button>
+        <input class="button-signIn" type=submit>注册</button>
         <p>已有账户，请<a href="/account/signIn">登录</a></p>
     </form>
     <p class="signIn-p">点击注册，您已同意<a>游戏先生的相关条款和隐私协议</a></p>
