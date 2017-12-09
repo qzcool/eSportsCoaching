@@ -25,7 +25,7 @@ function checkUserInfo(form){
       alert("请输入您的用户名或密码");
       return;
     }
-    form.action="<%=path%>/account/login.action?userName="+userText+"&passWord="+pwdText+"&role="+role;
+    form.action="<%=path%>/account/login?userName="+userText+"&passWord="+pwdText+"&role="+role;
     form.submit();
 }
 
