@@ -31,16 +31,6 @@ function checkUserInfo(){
     var url = "/account/login?username="+userText+"&password="+pwdText+"&role="+role;
     window.location.href=url;
 }
-/*verify user id*/
-function checkUserId(){
-    var verifyCode=document.getElementById("verifyCode").innerHTML;
-    if(verifyCode===""){
-      alert("请输入验证码");
-      return;
-    }
-    var url= "/identify/sendCode?username="+verifyCode;
-    window.location.href=url;
-}
 
 var image = '';
 function selectImage(file) {

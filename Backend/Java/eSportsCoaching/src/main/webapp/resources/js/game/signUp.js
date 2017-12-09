@@ -19,6 +19,7 @@ eyeIcon.onclick = function () {
 
 getVerifyCode.onclick = function () {
     getVerifyCode.value = count;
+    checkUserId();
     intervalFlag = setInterval(function () {
         count--;
         getVerifyCode.value = count;
@@ -30,3 +31,13 @@ getVerifyCode.onclick = function () {
     }, 1000);
 }
 
+/*verify user id*/
+function checkUserId(form){
+    var verifyCode=document.getElementById("verifyCode").innerHTML;
+    if(verifyCode===""){
+      alert("请输入验证码");
+      return;
+    }
+    form.action= "/identify/sendCode?username="+verifyCode;
+    form.submit();
+}
