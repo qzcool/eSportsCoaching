@@ -68,8 +68,8 @@ form{
     border-radius:10px;
 }
 .gamer-image{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  background-image:url(../images/game0.png)
 }
 .searchChoice {
     height: 36px;
