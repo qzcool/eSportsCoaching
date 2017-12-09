@@ -7,6 +7,9 @@ import com.esports.web.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 /**
  * Description:
@@ -35,12 +38,15 @@ public class UserServiceImpl implements IUserService {
     @Override
     public User login(String username, String password) {
         User user = null;
+        Map<String,Object> params = new HashMap<>();
+        params.put("username",username);
+        params.put("password", password);
         if (username.matches(RegExConstant.EMAIL_REG)) {
-            user = userMapper.loginByEmail(username, password);
+            user = userMapper.loginByEmail(params);
         } else if (username.matches(RegExConstant.PHONE_REG)) {
-            user = userMapper.loginByPhone(username, password);
+            user = userMapper.loginByPhone(params);
         } else {
-            user = userMapper.loginByName(username, password);
+            user = userMapper.loginByName(params);
         }
         return user;
     }

@@ -2,6 +2,8 @@ package com.esports.web.dao;
 
 import com.esports.web.model.User;
 
+import java.util.Map;
+
 
 public interface UserMapper {
 
@@ -13,11 +15,11 @@ public interface UserMapper {
 
     User selectByPhone(String phone);
 
-    User loginByName(String username, String password);
+    User loginByName(Map<String,Object> params);
 
-    User loginByEmail(String username, String password);
+    User loginByEmail(Map<String,Object> params);
 
-    User loginByPhone(String username, String password);
+    User loginByPhone(Map<String,Object> params);
 
 
 }

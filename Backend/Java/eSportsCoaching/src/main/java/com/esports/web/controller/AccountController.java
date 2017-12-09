@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Description:
  * Author: XJD
- * Date: 2017-09-02 16:55
+ * Date: 2017-12-09 15:55
  */
 @Controller
 @RequestMapping("/account")
@@ -41,7 +41,7 @@ public class AccountController {
     }
 
     @RequestMapping("/login")
-    public String login(HttpServletRequest request, RedirectAttributes attribute) {
+    public String login(HttpServletRequest request) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -49,27 +49,26 @@ public class AccountController {
 
         User user = userService.login(username, password);
         if (user != null) {
+            session.setAttribute("user",user);
             int role = user.getRole();
             String redirectPath = "redirect:/index";
-            attribute.addAttribute("sessionId", session.getId());
-            attribute.addAttribute(session.getId(), session);
             if (role == 1) {
-                redirectPath = "redirect: 登录成功1";
+                redirectPath = "redirect:/user/gamer/profile";
             } else if (role == 2) {
-                redirectPath = "redirect: 登录成功2";
+                redirectPath = "redirect:/user/sensei/profile";
             }
             return redirectPath;
         } else {
-            return "forward: /account/login_error";
+            return "forward:login_error";
         }
     }
 
     @RequestMapping("/register")
     public String register(HttpServletRequest request) {
-        String nickName = request.getParameter("nickName");
+        String nickName = request.getParameter("nickname");
         String password = request.getParameter("password");
         String role = request.getParameter("role");
-        String username = request.getParameter("userName");
+        String username = request.getParameter("username");
         String identifyCode = request.getParameter("code");
         User user = new User();
         user.setUsername(nickName);
@@ -85,11 +84,11 @@ public class AccountController {
         if (identifyCode.equals(code)) {
             return "redirect: /account/signIn";
         } else {
-            return "forward: /register_error";
+            return "forward:register_error";
         }
     }
 
-    @RequestMapping("/login_error")
+    @RequestMapping(value = "/login_error", produces = "application/json; charset=utf-8")
     @ResponseBody
     public String loginFail() {
         JSONObject json = new JSONObject();
@@ -98,7 +97,7 @@ public class AccountController {
         return json.toJSONString();
     }
 
-    @RequestMapping("/register_error")
+    @RequestMapping(value = "/register_error", produces = "application/json; charset=utf-8")
     @ResponseBody
     public String registerFail() {
         JSONObject json = new JSONObject();

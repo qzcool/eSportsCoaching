@@ -32,7 +32,7 @@ public class IdentifyCodeServiceImpl implements IIdentifyCodeService {
         String code = IdentifyCodeUtil.getVerifyCode();
 
         if (address.matches(RegExConstant.EMAIL_REG)) {
-            emailService.sendEmail("aircraftbjtu@163.com", "邮件标题", code);
+            emailService.sendEmail(address, "游戏先生验证码", code);
         } else if (address.matches(RegExConstant.PHONE_REG)) {
             //发短信验证码
         }

@@ -28,11 +28,11 @@
     </select>
 
     <select id="loginByEmail" parameterType="java.util.Map" resultType="com.esports.web.model.User">
-        select * from user where email = #{email} and password = #{password}
+        select * from user where email = #{username} and password = #{password}
     </select>
 
     <select id="loginByPhone" parameterType="java.util.Map" resultType="com.esports.web.model.User">
-        select * from user where phone = #{phone} and password = #{password}
+        select * from user where phone = #{username} and password = #{password}
     </select>
 
 </mapper>

@@ -1,7 +1,10 @@
 package com.esports.web.controller;
 
+import com.esports.web.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Description:
@@ -13,12 +16,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
 
     @RequestMapping("/gamer/profile")
-    public String gamerProfile(){
+    public String gamerProfile(HttpServletRequest request){
+        System.out.println((User)request.getSession().getAttribute("user"));
         return "forward:/views/gamer/profile.html";
     }
 
     @RequestMapping("/sensei/profile")
-    public String senseiProfile(){
+    public String senseiProfile(HttpServletRequest request){
+        System.out.println((User)request.getSession().getAttribute("user"));
         return "forward:/views/sensei/profile.html";
     }
 }

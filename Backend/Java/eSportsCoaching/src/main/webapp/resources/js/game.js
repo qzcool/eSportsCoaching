@@ -18,7 +18,21 @@ function checkUserInfo(){
       alert("请输入您的用户名或密码");
       return;
     }
-    window.location.href="/account/login";
+    for(var i=0; i<users.length; i++){
+      if(users[i].name===userText){
+          if(pwdText === users[i].pwd){
+              alert("登录成功");
+              if (users[i].type === "STU") {
+                  window.location.href = "gamer/profile.html";
+              } else if (users[i].type === "SEN") {
+                  window.location.href = "sensei/profile.html";
+              }
+          }else{
+             alert("用户名或密码错误");
+          }
+          return;
+      }
+    }
 }
 
 var image = '';
@@ -45,14 +59,14 @@ function createCanlenderTable(){
         tbodyForAvailablity = senseiId;
     }
     var today = new Date();
-    var year = today.getFullYear();      
-    var month = today.getMonth() + 1;    
-    var day = today.getDate();           
+    var year = today.getFullYear();
+    var month = today.getMonth() + 1;
+    var day = today.getDate();
     var startDay = new Date(year, month - 1, 1).getDay();
     var nDays = new Date(year, month, 0).getDate();
 
-    var numRow = 0;  
-    var i;      
+    var numRow = 0;
+    var i;
     var html = '';
     var indexRow = 0;
     html += '<tr>';
@@ -64,17 +78,17 @@ function createCanlenderTable(){
     for (var j = 1; j <= nDays; j++) {
         if (j == day) {
             html += '<td style="color:red">';
-            html += j;    
+            html += j;
         }
         else {
             html += '<td>';
-            html += j;    
+            html += j;
         }
         html += '</td>';
         numRow++;
-        if (numRow == 7) { 
+        if (numRow == 7) {
             numRow = 0;
-            indexRow++;        
+            indexRow++;
             html += '</tr><tr>';
         }
     }
@@ -99,20 +113,20 @@ function createAvailablityTable(){
         }
         for (var i = 0; i < 24; i++) {
             tableArray[i] = document.createElement("tr");
-            tbodyForAvailablity.appendChild(tableArray[i]);   
+            tbodyForAvailablity.appendChild(tableArray[i]);
             for (var j = 0; j < 7; j++) {
                 tableArray[i][j] = document.createElement("td");
-                tableArray[i].appendChild(tableArray[i][j]);   
+                tableArray[i].appendChild(tableArray[i][j]);
                 tableArray[i][j].innerHTML = i + ":00";
-            }         
-        }    
-        
+            }
+        }
+
     }
 }
 createAvailablityTable();
 
 function signUpUser(){
-    window.location.href="/account/register";
+    window.location.href="signUp.html";
 }
 /*add optional games*/
 function addOptionsForSelect(){
@@ -126,11 +140,11 @@ function addOptionsForSelect(){
         var gamesDiv = document.createElement("div");
         gamesDiv.classList.add("pDisplayInline", "img_index");
         gameShow.appendChild(gamesDiv);
-        var img = document.createElement("img");   
+        var img = document.createElement("img");
         img.src = "images/game" + i + ".png";
         img.classList.add("img-responsive");
-        gamesDiv.appendChild(img);    
-    } 
+        gamesDiv.appendChild(img);
+    }
 }
 addOptionsForSelect();
 
@@ -187,26 +201,26 @@ $(function () {
         window.location.href = "searchSensei.html";
     });
     $(".gameLogo").click(function () {
-        if (window.location.href.match(/\/index.html/)) {
+        if (window.location.href.match(/\/index.html/) || window.location.href.match(/\/sign/)) {
             window.location.href = 'index.html';
         } else {
             window.location.href = '../index.html';
         }
-       
+
     });
     var disable = false;
-    $("#personList").css('display', 'none'); 
+    $("#personList").css('display', 'none');
     $('#personalID').click(function () {
         if (disable) {
-            $("#personList").css('display', 'none'); 
+            $("#personList").css('display', 'none');
             disable = false;
         } else {
-            $("#personList").css('display', 'block'); 
+            $("#personList").css('display', 'block');
             disable = true;
         }
     });
 
-    
+
     var diableGame = false;
     $("#gameList").css('display', 'none');
     $("#gameNameI").click(function () {
@@ -221,7 +235,7 @@ $(function () {
 
     var bTmp = $("<b></b>");
     bTmp.addClass("caret caret-right");
-    
+
     $("#playerUnkonwn").click(function () {
         $("#gameNameI").text('绝地求生');
         $("#gameNameI").append(bTmp);
