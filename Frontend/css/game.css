@@ -1,9 +1,8 @@
 body {
-    font-family: arial,helvetica,sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
 button, input, select, textarea {
-    font-family: Arial;
     font-size: 100%;
     border-color: #e3e3e4;
 }
@@ -12,12 +11,16 @@ select {
     align-items: center;
     white-space: pre;
     color: black;
-    background-color: #EEEEEE;
 }
+
 input,textarea,select,button{
     text-rendering:auto;
     text-align:start;
     font:18px Arial;
+}
+
+option{
+  padding-top:5px !important;
 }
 
 form{
@@ -39,8 +42,12 @@ form{
     height: 50px;
     float: left;
     text-align: center;
-    background-image: url(../images/gameLogo.png);
+    background-image: url(../images/gameLogo.PNG);
     background-repeat: no-repeat;
+}
+
+.siderList_text{
+  color:white;
 }
 
 .nav-height{
@@ -48,17 +55,39 @@ form{
     padding-right:0 !important;
 }
 
+.tutorImage-index{
+  border-radius:50%;
+}
+.font-setting{
+  line-height:50px;
+}
+
+.evaluate-sensei{
+  width:50%;
+}
+
 .index-search-btn {
     padding-top: 45px;
     padding-bottom: 45px;
 }
+/*show gamer*/
 .text-index-player {
     border: 1px solid #e3e3e4;
-    height:100%;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    border-radius:10px;
+}
+.gamer-image{
+  border-radius: 10px;
+  background-image:url(../images/game0.png)
 }
 .searchChoice {
     height: 36px;
     position: relative;
+}
+
+.margin-index{
+  margin-top:40px;
 }
 .search-navbar-search-wrapper #search-navbar-search .nav-search-scope .facade-selector-wrapper .nav-left{
     background-color:#ECECED;
@@ -76,6 +105,7 @@ form{
 .font-green {
     color: green;
 }
+
 .find-sensei-img{
    width:206px;
    height:39px;
@@ -139,6 +169,17 @@ form{
     width: 9%;
     height:30px;
     color: forestgreen;
+}
+/*about us in index page*/
+.font-aboutUs{
+  color:#02b3e4;
+  text-align:center;
+}
+
+.aboutUsImg{
+  border-radius:10px;
+  border:1px solid #e3e3e4;
+  width:250px;
 }
 
 .result-list {
@@ -462,6 +503,8 @@ form{
   font-size:35px;
   text-align:center;
   margin:30px 5px;
+  border-radius:4px;
+  color:#02b3e4;
 }
 .scaleButton{
   color:#fff;
@@ -627,9 +670,13 @@ form{
 }
 .saving-btn-pricing {
     padding-right: 0 !important;
-} 
+}
 .selectYourGame {
-    border: none;
+    padding:10px 10px;
+    border: 1px solid #e3e3e4;
+    border-radius:4px;
+    height:80px;
+    line-height:80px;
     /*appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;*/
@@ -694,12 +741,12 @@ form{
 .hero-header{
   font-size:55px;
   line-height:55px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .hero-select{
   font-size:45px;
   line-height:45px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .pDisplayInline{
   display:inline-block;
@@ -775,14 +822,14 @@ form{
   height:150px;
 }
 .padding-index{
-  padding-top:100px;
+  padding-top:80px;
 }
 .selection-height {
     width:100%;
     height: 100%;
 }
 .index-backgroundImage {
-    background-image: url("../images/index-backroundImage.png");
+    background-image: url("../images/index-backroundImage.JPG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center bottom, center center;

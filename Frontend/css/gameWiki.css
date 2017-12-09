@@ -1,0 +1,13 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+}
+
+.nav-font{
+    color:white;
+    background-color: black;
+}
+
+.wikiTitle{
+  height:50px;
+  line-height:50px ;
+}
