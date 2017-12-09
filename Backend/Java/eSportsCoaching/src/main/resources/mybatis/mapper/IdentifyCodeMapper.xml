@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.esports.web.dao.IdentifyCodeMapper">
+
+    <insert id="insertCode" parameterType="com.esports.web.model.IdentifyCode">
+        insert into identify_code_cache (username,identify_code,expire_time) values (#{username}, #{code}, #{extime})
+    </insert>
+
+    <select id="selectByName" parameterType="java.lang.String" resultType="java.lang.String">
+        select identify_code from identify_code_cache where username = #{username} and expire_time &gt; NOW()
+    </select>
+
+
+</mapper>

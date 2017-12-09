@@ -8,6 +8,7 @@
         <property name="locations">
             <list>
                 <value>classpath:jdbc.properties</value>
+                <value>classpath:contact.properties</value>
             </list>
         </property>
     </bean>

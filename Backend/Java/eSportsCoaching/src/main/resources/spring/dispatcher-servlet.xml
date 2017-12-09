@@ -9,6 +9,7 @@
         <property name="locations">
             <list>
                 <value>classpath:jdbc.properties</value>
+                <value>classpath:contact.properties</value>
             </list>
         </property>
     </bean>
@@ -26,7 +27,7 @@
     <!-- 2.视图解析器-->
 
     <!-- 3.静态资源文件配置 -->
-    <mvc:resources mapping="/static/**" location="WEB-INF/static/"/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
     <!-- html视图：意思是当url匹配到/views/**，其实访问的是/WEB-INF/views/**-->
     <mvc:resources mapping="/views/**" location="/WEB-INF/views/"/>
 
