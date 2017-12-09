@@ -1,9 +1,8 @@
 body {
-    font-family: arial,helvetica,sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
 button, input, select, textarea {
-    font-family: Arial;
     font-size: 100%;
     border-color: #e3e3e4;
 }
@@ -56,6 +55,17 @@ form{
     padding-right:0 !important;
 }
 
+.tutorImage-index{
+  border-radius:50%;
+}
+.font-setting{
+  line-height:50px;
+}
+
+.evaluate-sensei{
+  width:50%;
+}
+
 .index-search-btn {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -68,8 +78,8 @@ form{
     border-radius:10px;
 }
 .gamer-image{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  background-image:url(../images/game0.png)
 }
 .searchChoice {
     height: 36px;
