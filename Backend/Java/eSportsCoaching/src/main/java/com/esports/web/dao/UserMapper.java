@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface UserMapper {
 
-    int insertUser(User user);
+    void insertUser(User user);
 
     User selectByName(String username);
 

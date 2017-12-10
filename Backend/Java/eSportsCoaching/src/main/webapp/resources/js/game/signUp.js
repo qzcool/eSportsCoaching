@@ -1,4 +1,4 @@
-var eyeIcon = document.getElementById('eyeIcon');
+﻿var eyeIcon = document.getElementById('eyeIcon');
 var userPwd = document.getElementById('userPwd');
 var getVerifyCode = document.getElementById('getVerifyCode');
 eyeIcon.style.color = '#e3e3e4';
@@ -19,6 +19,7 @@ eyeIcon.onclick = function () {
 
 getVerifyCode.onclick = function () {
     getVerifyCode.value = count;
+    var flag = checkUserId();
     intervalFlag = setInterval(function () {
         count--;
         getVerifyCode.value = count;
@@ -30,21 +31,30 @@ getVerifyCode.onclick = function () {
     }, 1000);
 }
 
-$(function(){
-  $("#getVerifyCode").click(function () {
-    var userText = $("#userName").val();
-      $.ajax({
-        type:"GET",
-        url:"/identify/sendCode?username="+userText,
-        success:function(result){
-          if(result=="Y"){
-            alert("验证码已发送至邮箱");
-          }else{
-            alert("发送失败");
-        }},
-        error:function(){
-            alert("错误");
+/*verify user id*/
+function checkUserId() {
+    var userText = document.getElementById("userName").value;
+    if (userText === "") {
+        alert("请输入邮箱或者手机号");
+        return false;
+    }
+    $.ajax({
+        //提交数据的类型 POST GET
+        type: "POST",
+        //提交的网址
+        url: "/identify/sendCode",
+        //提交的数据
+        data: {username: userText},
+        //返回数据的格式
+        datatype: "json",//"xml", "html", "script", "json", "jsonp", "text".
+        //成功返回之后调用的函数
+        success: function (data) {
+
+        },
+        //调用出错执行的函数
+        error: function () {
+            //请求出错处理
         }
-      });
-  });
-});
+    });
+
+}
