@@ -4,9 +4,6 @@
 <mapper namespace="com.esports.web.dao.UserMapper">
 
     <insert id="insertUser" parameterType="com.esports.web.model.User">
-        <selectKey keyProperty='id' resultType='java.lang.Integer' order='AFTER'>
-            select LAST_INSERT_ID();
-        </selectKey>
         insert into user (username,password,role,phone,email) values
                           (#{username}, #{password}, #{role}, #{phone}, #{email})
     </insert>

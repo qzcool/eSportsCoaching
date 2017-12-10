@@ -52,9 +52,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public int addUser(User user) {
-        int userid = userMapper.insertUser(user);
-        return userid;
+    public void addUser(User user) {
+        userMapper.insertUser(user);
     }
 
 }

@@ -13,5 +13,5 @@ public interface IUserService {
 
     User login(String username, String password);
 
-    int addUser(User user);
+    void addUser(User user);
 }

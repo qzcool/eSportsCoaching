@@ -8,7 +8,7 @@
     </insert>
 
     <select id="selectByName" parameterType="java.lang.String" resultType="java.lang.String">
-        select identify_code from identify_code_cache where username = #{username} and expire_time &gt; NOW()
+        select identify_code from identify_code_cache where username = #{username} and expire_time &gt; NOW() ORDER BY expire_time desc limit 1
     </select>
 
 

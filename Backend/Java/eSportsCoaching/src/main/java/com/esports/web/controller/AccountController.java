@@ -41,7 +41,7 @@ public class AccountController {
         return "forward:/views/signUp.html";
     }
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(HttpServletRequest request) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
@@ -50,7 +50,7 @@ public class AccountController {
 
         User user = userService.login(username, password);
         if (user != null) {
-            session.setAttribute("user",user);
+            session.setAttribute("user", user);
             int role = user.getRole();
             String redirectPath = "redirect:/index";
             if (role == 1) {
@@ -64,7 +64,7 @@ public class AccountController {
         }
     }
 
-    @RequestMapping("/register")
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(HttpServletRequest request) {
         String nickName = request.getParameter("nickname");
         String password = request.getParameter("password");
@@ -83,6 +83,7 @@ public class AccountController {
         //验证验证码
         String code = codeService.getIdentifyCode(username);
         if (identifyCode.equals(code)) {
+            userService.addUser(user);
             return "redirect: /account/signIn";
         } else {
             return "forward:register_error";
@@ -106,7 +107,6 @@ public class AccountController {
         json.put("msg", "验证码错误");
         return json.toJSONString();
     }
-
 
 
 }

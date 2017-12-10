@@ -11,25 +11,22 @@ var users = [{
 
 
 /*check user name and user password in sign in*/
-function checkUserInfo(){
-
-    var userText=document.getElementById("userName").value;
-    var pwdText=document.getElementById("userPwd").value;
+function checkUserInfo(form){
+    var username = document.getElementById("userName").value;
+    var password = document.getElementById("userPwd").value;
     var role;
-
-    if(document.getElementById("optionsSensei").checked){
+    if(docuemnt.getElementById("optionsSensei").checked){
       role = document.getElementById("optionsSensei").value;
     }
-
-    if(document.getElementById("optionsStu").checked){
+    if(docuemnt.getElementById("optionsStu").checked){
       role = document.getElementById("optionsStu").value;
     }
-    if(userText==="" || pwdText===""){
+    if(username==="" || password===""){
       alert("请输入您的用户名或密码");
       return;
     }
-    var url = "/account/login?username="+userText+"&password="+pwdText+"&role="+role;
-    window.location.href=url;
+    form.action="<%=path%>/account/login?username="+username+"&password="+password+"&role="+role;
+    form.submit();
 }
 
 var image = '';
@@ -121,25 +118,9 @@ function createAvailablityTable(){
     }
 }
 createAvailablityTable();
-/*add sign up information*/
-function signUpUser(){
-  var userText=document.getElementById("userName").value;
-  var nickName=document.getElementById("nickName").value;
-  var pwdText=document.getElementById("userPwd").value;
-  var role;
-  if(document.getElementById("optionsSensei").checked){
-    role = document.getElementById("optionsSensei").value;
-  }
 
-  if(document.getElementById("optionsStu").checked){
-    role = document.getElementById("optionsStu").value;
-  }
-  if(userText==="" || pwdText===""){
-    alert("请输入您的用户名或密码");
-    return;
-  }
-  var url = "/account/register?username="+userText+"&password="+pwdText+"&role="+role;
-  window.location.href=url;
+function signUpUser(){
+    window.location.href="signUp.html";
 }
 /*add optional games*/
 function addOptionsForSelect(){
