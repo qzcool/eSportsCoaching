@@ -1,4 +1,4 @@
-﻿var eyeIcon = document.getElementById('eyeIcon');
+var eyeIcon = document.getElementById('eyeIcon');
 var userPwd = document.getElementById('userPwd');
 var getVerifyCode = document.getElementById('getVerifyCode');
 eyeIcon.style.color = '#e3e3e4';
@@ -19,7 +19,6 @@ eyeIcon.onclick = function () {
 
 getVerifyCode.onclick = function () {
     getVerifyCode.value = count;
-    checkUserId();
     intervalFlag = setInterval(function () {
         count--;
         getVerifyCode.value = count;
@@ -31,14 +30,21 @@ getVerifyCode.onclick = function () {
     }, 1000);
 }
 
-/*verify user id*/
-function checkUserId(form){
-    var verifyCode=document.getElementById("verifyCode").innerHTML;
-    var userText=document.getElementById("userName").value;
-    if(verifyCode===""){
-      alert("请输入验证码");
-      return;
-    }
-    form.action= "/identify/sendCode?username="+userText+"code="+verifyCode;
-    form.submit();
-}
+$(function(){
+  $("#getVerifyCode").click(function () {
+    var userText = $("#userName").val();
+      $.ajax({
+        type:"GET",
+        url:"/identify/sendCode?username="+userText,
+        success:function(result){
+          if(result=="Y"){
+            alert("验证码已发送至邮箱");
+          }else{
+            alert("发送失败");
+        }},
+        error:function(){
+            alert("错误");
+        }
+      });
+  });
+});

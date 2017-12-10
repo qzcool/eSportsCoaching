@@ -1,4 +1,4 @@
-﻿var eyeIcon = document.getElementById('eyeIcon');
+var eyeIcon = document.getElementById('eyeIcon');
 var userPwd = document.getElementById('userPwd');
 var getVerifyCode = document.getElementById('getVerifyCode');
 eyeIcon.style.color = '#e3e3e4';
@@ -30,3 +30,21 @@ getVerifyCode.onclick = function () {
     }, 1000);
 }
 
+$(function(){
+  $("#getVerifyCode").click(function () {
+    var userText = $("#userName").val();
+      $.ajax({
+        type:"GET",
+        url:"/identify/sendCode?username="+userText,
+        success:function(result){
+          if(result=="Y"){
+            alert("验证码已发送至邮箱");
+          }else{
+            alert("发送失败");
+        }},
+        error:function(){
+            alert("错误");
+        }
+      });
+  });
+});
