@@ -6,3 +6,6 @@ AWS Could9: https://aws.amazon.com/cn/cloud9/
 
 ## 数据库
 PostgreSQL on AWS
+
+## 注意事项
+1. 请勿删除.DS_Store文件，该文件为Macintosh系统重要依赖
