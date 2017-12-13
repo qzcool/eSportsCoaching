@@ -43,6 +43,15 @@ form{
     background-color:rgb(255,255,255);
 }
 
+
+.navbar a{
+  color:#333;
+}
+
+.page-bottom a{
+   color:white;
+}
+
 #searchSenseiIndex{
   margin-top:30px;
   margin-left:15px;
@@ -126,19 +135,6 @@ form{
   margin-bottom:5px;
 }
 
-.wiki-content{
-   width:50%;
-   border: 1px solid #e3e3e4;
-   background-color:white;
-   margin-top:30px;
-}
-
-.wiki-content-div{
-  padding-top:10px;
-  padding-bottom:30px;
-  border-bottom: 1px solid #e3e3e4;
-}
-
 .search-navbar-search-wrapper #search-navbar-search .nav-search-scope .facade-selector-wrapper .nav-left{
     background-color:#ECECED;
     height:36px;
@@ -151,19 +147,6 @@ form{
 }
 .index-padding-setting {
     padding-bottom:20px;
-}
-
-.wikiName{
-  border:none;
-  border-bottom: 1px solid #e3e3e4;
-  height:30px;
-  width:70%;
-  margin-top:20px;
-}
-
-.wiki-content-start{
-  padding:10px 10px;
-  margin-bottom:10px;
 }
 
 .background-setting-personality{
