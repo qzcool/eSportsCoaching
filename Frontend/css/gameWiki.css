@@ -12,6 +12,28 @@ body {
   line-height:50px ;
 }
 
+.dismiss-padLR{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.change-padLR-5{
+  padding-left:5px !important;
+  padding-right:5px !important;
+}
+
+.searchHeight{
+  height:50px !important;
+}
+
+.border-bottom-show{
+   border-bottom: 1px solid #e3e3e4;
+}
+
+.searchIcon{
+  line-height:50px;
+}
+
 .wiki-content{
    width:50%;
    border: 1px solid #e3e3e4;
