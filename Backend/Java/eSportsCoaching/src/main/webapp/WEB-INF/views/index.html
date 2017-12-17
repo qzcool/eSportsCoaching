@@ -19,192 +19,206 @@
     <script type="text/javascript" src="/resources/js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 </head >
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="col-xs-9">
-                <div class="gameLogo"></div>
+  <div class="container-fluid">
+      <nav class="navbar navbar-default" role="navigation">
+          <div class="col-xs-9">
+              <div class="gameLogo"></div>
+              <div class="col-xs-2 font-setting"><a>电竞陪练</a></div>
+              <div class="col-xs-2 font-setting"><a href="gameWiki.html">游戏文档</a></div>
+              <div class="col-xs-2 font-setting"><a href="aboutUs.html">关于我们</a></div>
+          </div>
+          <div class="col-xs-3 nav-height" id="navicon-id">
+              <div class="pull-right">
+                  <div class="col-xs-6 font-setting"><a href='signIn.html'>登录</a></div>
+                  <div class="col-xs-6 font-setting"><a href='signUp.html'>注册</a></div>
+             </div>
+          </div>
+          <div class="clearfix"></div>
+      </nav>
+  </div>
+  <div class="container-fluid selection-height index-backgroundImage">
+      <div class="gameContent padding-index">
+          <selection class="text-center">
+              <h1 class="hero-header">来提升你的技能吧！</h1>
+              <h2 class="hero-select">我想提升
+                  <select class="selectYourGame" id="gameOptional">
+                      <option value="" selected=""> 绝地求生</option>
+                      <option value=""> 王者荣耀</option>
+                      <option value=""> 英雄联盟</option>
+                  </select>
+              </h2>
+              <div class="index-search-btn">
+              <button type="button" class="searchButton" id="searchSensei">寻找先生</button>
+              <button type="button" class="searchButton" id="searchWiki">探索文档</button></div>
+          </selection>
+      </div>
+  </div>
+  <div class="container-fluid">
+      <div class="col-xs-12 margin-index block-setting background-setting-gameShow">
+          <h1 class="font-aboutUs">支持游戏</h1>
+          <div class="col-xs-4 index-padding-setting ">
+            <div class="col-xs-12 text-index-player">
+              <img src="resources/images/game0.png" class="gamer-image img-responsive"/>
             </div>
-            <div class="col-xs-3 nav-height" id="navicon-id">
-                <ul id="menu" class="pull-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
-                            <span class="fa fa-navicon fa-2x"></span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" id="personList">
-                            <li><a href='/account/signIn'>登录</a></li>
-                            <li><a href='/account/signUp'>注册</a></li>
-                        </ul>
-                    </li>
+          </div>
+          <div class="col-xs-4 index-padding-setting">
+            <div class="col-xs-12 text-index-player">
+              <img src="resources/images/game1.png" class="gamer-image img-responsive" />
+            </div>
+          </div>
+          <div class="col-xs-4 index-padding-setting">
+              <div class="col-xs-12 text-index-player">
+                  <img src="resources/images/game2.png" class="gamer-image img-responsive" />
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 margin-index block-setting background-setting-aboutUs">
+          <h1 class="font-aboutUs">关于我们</h1>
+            <div class="col-xs-6 index-padding-setting">
+              <img src="resources/images/aboutUs.jpg" class="aboutUsImg img-responsive pull-right"/>
+            </div>
+            <div class="col-xs-6 index-padding-setting">
+              <p>游戏先生是一款移动端娱乐电竞社交APP，旨在打造“国内第一娱乐电竞社交平台”。</p>
+              <p>产品于2017年6月正式上线，通过高效便捷的方式连接游戏高玩与普通玩家，真正实现了玩家们随时随地可进行技能变现、电竞教学、娱乐社交等内容。</p>
+              <p>被媒体称为“电竞滴滴”。在之后的版本更迭中，游戏先生会更深入挖掘用户痛点，衍生探索更多可能性，逐步成为电竞泛娱乐第一品牌。</p>
+            </div>
+      </div>
+      <div class="col-xs-12 margin-index block-setting background-setting-aboutUs">
+          <h1 class="font-aboutUs">我们的服务</h1>
+          <div class="col-xs-6 col-xs-offset-3 index-padding-setting">
+                <ul class="tutor-ul">
+                  <li class="li-disc">一对一游戏技能辅导</li>
+                  <li class="li-disc">游戏文档共享编辑服务</li>
                 </ul>
-            </div>
-            <div class="clearfix"></div>
-        </nav>
-    </div>
-    <div class="container-fluid selection-height index-backgroundImage">
-        <div class="gameContent padding-index">
-            <selection class="text-center">
-                <h1 class="hero-header">来提升你的技能吧！</h1>
-                <h2 class="hero-select">
-                    <select class="selectYourGame" id="gameOptional">
-                        <option value="" selected="">我想提升</option>
-                        <option value=""> 绝地求生</option>
-                        <option value=""> 王者荣耀</option>
-                        <option value=""> 英雄联盟</option>
-                    </select>
-                </h2>
-                <div class="index-search-btn">
-                <button type="button" class="searchButton"><a href="gamer/searchSensei.html">寻找教练</a></button></div>
-            </selection>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="col-xs-12">
-            <h1>游戏展示</h1>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-3">
-                    <img src="/resources/images/game0.png" class="img-responsive"/>
+          </div>
+      </div>
+      <div class="col-xs-12 margin-index block-setting background-setting-aboutUs">
+          <h1 class="font-aboutUs">学员成果</h1>
+          <div class="col-xs-12 index-padding-setting">
+              <div class="col-xs-10 col-xs-offset-2">
+                <div class="col-xs-2">
+                    <img src="resources/images/player1.png" class="img-responsive gamer-result-show" id="player-portrait"/>
                 </div>
                 <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
+                  <p id="player-saying">我非常的满意，我的教练在游戏方面有很强的知识储备，并且可以很好的进行讲解，了解游戏先生一个月了，我在游戏方面有了显著的提高！感谢游戏先生这个平台!  </p>
+                 <h4 class="player-name" id="player-name">Amelia</h4>
+                 <p id="game-name">绝地求生</p>
+                 </div>
+             </div>
+              <div class="col-xs-8 col-xs-offset-4 margin-tutor-index" id="circle-o">
+                <span class="fa fa-circle color-circle" id="circle0"></span>
+                <span class="fa fa-circle color-circle" id="circle1"></span>
+                <span class="fa fa-circle color-circle" id="circle2"></span>
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 margin-index block-setting background-setting-tutor">
+          <h1 class="font-aboutUs">我们的导师</h1>
+          <div class="col-xs-12 index-padding-setting">
+              <form class="col-xs-6 margin-bottom-20">
+                  <select class="gamer-searchSensei gamerSearch">
+                      <option value=""> 绝地求生</option>
+                      <option value=""> 王者荣耀</option>
+                      <option value=""> 英雄联盟</option>
+                  </select>
+                  <input class="gamer-input gamerSearch" placeholder="寻找先生"/>
+                  <button type="button" class="btn btn-default" style="font-size:13px;">
+                      <span class="fa fa-search"></span>
+                  </button>
+              </form>
+              <div class="col-xs-12">
+                <div class="col-xs-2">
+                    <img src="resources/images/player1.png" class="img-responsive tutorImage-index center-block" />
                 </div>
-            </div>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-3">
-                    <img src="/resources/images/game1.png" class="img-responsive" />
+                <div class="col-xs-8">
+                  <p><a class="tutor-name-style">Joe</a></p>
+                  <span class="rating">
+                      <span class="fa fa-star fa-index-tutor"></span>
+                      <span class="fa fa-star fa-index-tutor"></span>
+                      <span class="fa fa-star fa-index-tutor"></span>
+                      <span class="fa fa-star fa-index-tutor"></span>
+                      <span class="fa fa-star fa-index-tutor"></span>
+                  </span>
+                  <ul class="tutor-ul">
+                    <li class="li-disc">王者荣耀-青铜</li>
+                    <li class="li-disc">2016年王者荣耀世界锦标赛第一名</li>
+                    <li class="li-disc">2017年英雄联盟世界锦标赛第一名</li>
+                  </ul>
+                 </div>
+              </div>
+              <div class="col-xs-12">
+                <button type="button" class="btn btn-info col-xs-2" id="searchSenseiIndex">寻找先生</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 margin-index block-setting background-setting-personality">
+          <h1 class="font-aboutUs">选择你的头衔</h1>
+          <p style="text-align:center">我们为每一位学员提供个性化头衔服务</p>
+          <div class="col-xs-12 index-padding-setting">
+              <div class="col-xs-3 border-personality title-margin">
+                <img src="resources/images/game1.png" class="img-responsive personality-inside-image"/>
+                <h4>绝地求生先生</p>
+                <br>
+                <p class="playerUnkown">绝地求生游戏是一款大逃杀类型的游戏，每一局游戏将有最多100名玩家参与，他们将被投放在绝地岛上，在游戏的开始时所有人都一无所有。玩家需要在岛上收集各种资源，在不断缩小的安全区域内对抗其他玩家，让自己生存到最后。</p>
+                <br>
+                <div class="col-xs-12 course-title">
+                <button class="playUnkown-button">来吃鸡！</button>
                 </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
+              </div>
+              <div class="col-xs-3 border-personality title-margin">
+                <img src="resources/images/game0.png" class="img-responsive personality-inside-image"/>
+                <h4>王者荣耀先生</p>
+                <br>
+                <p class="playerUnkown">绝地求生游戏是一款大逃杀类型的游戏，每一局游戏将有最多100名玩家参与，他们将被投放在绝地岛上，在游戏的开始时所有人都一无所有。玩家需要在岛上收集各种资源，在不断缩小的安全区域内对抗其他玩家，让自己生存到最后。</p>
+                <br>
+                <div class="col-xs-12 course-title">
+                <button class="playUnkown-button">来吃鸡！</button>
                 </div>
-            </div>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-3">
-                    <img src="/resources/images/game2.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-xs-12">
-            <h1>关于我们</h1>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-8 text-index-player">
-                    <p>我们网站旨在帮助更多的玩家提高自己的游戏技能！游戏江湖，你我同行！</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-xs-12">
-            <h1>我们的服务</h1>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-8 text-index-player">
-                    <p>一对一游戏技能辅导</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12">
-            <h1>学员成果</h1>
-            <div class="col-xs-12 index-padding-setting">
-
-                <div class="col-xs-3">
-                    <img src="/resources/images/player1.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12">
-            <h1>客户评价</h1>
-            <div class="col-xs-12 index-padding-setting">
-
-                <div class="col-xs-3">
-                    <img src="/resources/images/player1.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12">
-            <h1>成功案例</h1>
-            <div class="col-xs-12 index-padding-setting">
-
-                <div class="col-xs-3">
-                    <img src="/resources/images/player1.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12">
-            <h1>我们的导师</h1>
-            <div class="col-xs-12 index-padding-setting">
-                <div class="col-xs-3">
-                    <img src="/resources/images/player1.png" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 text-index-player">
-                    <p>游戏先生是一个很棒的网站，在此我有效的提高了自己的游戏技能！</p>
-                </div>
-            </div>
-            <button type="button" class="btn btn-info center-block" id="searchSenseiIndex">寻找先生</button>
-        </div>
-        <div class="col-xs-12 page-bottom">
-            <div class="col-xs-4 navbar-header padding-bottom-value">
-                游戏先生
-            </div>
-            <div class="col-xs-8 padding-bottom-value">
-                <div class="col-xs-4">
-                    <ul>
-                        <li>公司</li>
-                        <li>关于我们</li>
-                        <li>加入我们</li>
-                        <li>成为先生</li>
-                    </ul>
-                </div>
-                <div class="col-xs-4">
-                    <ul>
-                        <li>支持</li>
-                        <li>联系方式</li>
-                        <li>服务条款</li>
-                        <li>隐私协议</li>
-                        <li>常见问题</li>
-                    </ul>
-                </div>
-                <div class="col-xs-4">
-                    <ul>
-                        <li>游戏</li>
-                        <li>英雄联盟</li>
-                        <li>王者荣耀</li>
-                        <li>绝地求生</li>
-                    </ul>
-                </div>
-                <div class="col-xs-4">
-                    <ul>
-                        <li>合作伙伴</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="center-block index-bottom-icon">
-                    <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-wechat fa-2x"></i> </span>
-                    <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-qq fa-2x"></i> </span>
-                    <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-weibo fa-2x"></i> </span>
-                    <span style="font-size:12px;" class="padding-to-text"><i class="fa fa-instagram fa-2x"></i> </span>
-                </div>
-            </div>
-            <p class="text-center">© 2017 游戏先生版权所有.</p>
-        </div>
-
-    </div>
-    <script language="JavaScript" src="/resources/js/game.js"></script>
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 page-bottom">
+          <div class="col-xs-3 navbar-header padding-bottom-value">
+              游戏先生
+          </div>
+          <div class="col-xs-9 padding-bottom-value">
+              <div class="col-xs-4">
+                  <ul>
+                      <li>公司</li>
+                      <li>关于我们</li>
+                      <li>加入我们</li>
+                      <li>成为先生</li>
+                  </ul>
+              </div>
+              <div class="col-xs-4">
+                  <ul>
+                      <li>支持</li>
+                      <li>联系方式</li>
+                      <li><a>服务条款</a></li>
+                      <li><a>隐私协议</a></li>
+                      <li>常见问题</li>
+                  </ul>
+              </div>
+              <div class="col-xs-4">
+                  <ul>
+                      <li>游戏</li>
+                      <li>英雄联盟</li>
+                      <li>王者荣耀</li>
+                      <li>绝地求生</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-xs-12">
+              <div class="center-block index-bottom-icon">
+                  <span class="padding-to-text"><a href='https://wx.qq.com/'><i class="fa fa-wechat fa-2x"></i></a> </span>
+                  <span class="padding-to-text"><a href='http://www.qq.com/'><i class="fa fa-qq fa-2x"></i></a> </span>
+                  <span class="padding-to-text"><a href='https://weibo.com/'><i class="fa fa-weibo fa-2x"></i> </a></span>
+              </div>
+              <p class="center-block index-bottom-icon">© 2017 游戏先生版权所有.</p>
+          </div>
+      </div>
+  </div>
+  <script language="JavaScript" src="resources/js/game.js"></script>
+  <script language="JavaScript" src="resources/js/game/index.js"></script>
 </body >
 </html >

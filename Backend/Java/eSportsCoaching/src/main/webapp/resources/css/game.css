@@ -1,9 +1,13 @@
 body {
-    font-family: arial,helvetica,sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  background-color:#f6f6f6 !important;
+}
+
+a{
+  cursor:pointer;
 }
 
 button, input, select, textarea {
-    font-family: Arial;
     font-size: 100%;
     border-color: #e3e3e4;
 }
@@ -12,12 +16,17 @@ select {
     align-items: center;
     white-space: pre;
     color: black;
-    background-color: #EEEEEE;
 }
+
 input,textarea,select,button{
     text-rendering:auto;
     text-align:start;
     font:18px Arial;
+}
+
+option{
+  padding-top:5px !important;
+  text-align:center;
 }
 
 form{
@@ -33,14 +42,42 @@ form{
     width:100%;
     background-color:rgb(255,255,255);
 }
+
+
+.navbar a{
+  color:#333;
+}
+
+.page-bottom a{
+   color:white;
+}
+
+#searchSenseiIndex{
+  margin-top:30px;
+  margin-left:15px;
+  margin-bottom:20px;
+}
+
+.center-text{
+  text-align:center;
+}
 .gameLogo {
     display: block;
     width: 200px;
     height: 50px;
     float: left;
     text-align: center;
-    background-image: url(../images/gameLogo.png);
+    background-image: url(../images/gameLogo.PNG);
     background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.siderList_text{
+  color:white;
+}
+
+.player-name{
+  color: #e09a22;
 }
 
 .nav-height{
@@ -48,18 +85,56 @@ form{
     padding-right:0 !important;
 }
 
+.tutorImage-index{
+  border-radius:4px;
+}
+.font-setting{
+  line-height:50px;
+}
+
+.evaluate-sensei{
+  width:90%;
+  text-align:center;
+}
+
+.block-setting{
+  background-color:white;
+}
+
+.margin-tutor-index{
+  margin-top:10px;
+}
+
 .index-search-btn {
     padding-top: 45px;
     padding-bottom: 45px;
 }
+/*show gamer*/
 .text-index-player {
     border: 1px solid #e3e3e4;
-    height:100%;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    border-radius:10px;
+}
+
+.gamer-result-show{
+    border-radius:4px;
+}
+
+.gamer-image{
+  border-radius: 10px;
+  background-image:url(../images/game0.png)
 }
 .searchChoice {
     height: 36px;
     position: relative;
 }
+
+.margin-index{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
 .search-navbar-search-wrapper #search-navbar-search .nav-search-scope .facade-selector-wrapper .nav-left{
     background-color:#ECECED;
     height:36px;
@@ -73,9 +148,63 @@ form{
 .index-padding-setting {
     padding-bottom:20px;
 }
+
+.background-setting-personality{
+   background: linear-gradient(0deg, #053940, #032125 85%);
+}
+
+.background-setting-gameShow{
+   background: linear-gradient(0deg, #d9edf7, #eee 85%);
+}
+
+.background-setting-aboutUs{
+   background: linear-gradient(0deg, #d9edf7, #eee 85%);
+}
+
+.background-setting-tutor{
+   background: linear-gradient(0deg, #d9edf7, #eee 85%);
+}
+
 .font-green {
     color: green;
 }
+
+.border-personality{
+  border: 0.75rem #053940 solid;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.background-setting-personality p{
+  color:white;
+}
+.background-setting-personality h4{
+  color:white;
+}
+
+.playerUnkown{
+  font-size: 0.88889rem;
+  line-height: 1.5rem;
+}
+
+.playUnkown-button{
+  width:100%;
+  background:none;
+  background-color: #dd5126;
+  border: 1px solid #dd5126;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+}
+
+.color-circle{
+  color:#ddd !important;
+  font-size: 5px !important;
+  padding-right:10px !important;
+}
+
 .find-sensei-img{
    width:206px;
    height:39px;
@@ -139,6 +268,17 @@ form{
     width: 9%;
     height:30px;
     color: forestgreen;
+}
+/*about us in index page*/
+.font-aboutUs{
+  color:#02b3e4;
+  text-align:center;
+}
+
+.aboutUsImg{
+  border-radius:10px;
+  border:1px solid #e3e3e4;
+  width:250px;
 }
 
 .result-list {
@@ -244,9 +384,6 @@ form{
     border-bottom: 1px solid #e3e3e4;
 }
 
-#searchSenseiIndex {
-    margin-bottom:20px;
-}
 .page-bottom {
     background-color: black;
     color: white;
@@ -262,8 +399,8 @@ form{
 
 .index-bottom-icon {
     width: 20%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .senseiDetail-border {
     border: 1px solid #e3e3e4;
@@ -277,6 +414,19 @@ form{
 
 .margin-bottom-10{
     margin-bottom:10px;
+}
+
+.margin-bottom-20{
+    margin-bottom:20px;
+}
+
+.tutor-name-style{
+  color:#dd5126 !important;
+  font-size: 20px;
+}
+
+.fa-index-tutor{
+  color:#dd5126 !important;
 }
 
 .vector-diagram-set {
@@ -450,6 +600,11 @@ form{
     margin-top: 40px;
 }
 
+.title-margin{
+  margin-left:10px;
+  margin-right:10px;
+}
+
 .gameContent{
   position:relative;
   width:auto;
@@ -462,6 +617,8 @@ form{
   font-size:35px;
   text-align:center;
   margin:30px 5px;
+  border-radius:4px;
+  color:#02b3e4;
 }
 .scaleButton{
   color:#fff;
@@ -601,6 +758,13 @@ form{
   float:left;
 }
 
+.tutor-ul{
+  -webkit-padding-start: 0px !important;
+}
+.li-disc{
+  list-style-type : disc;
+}
+
 .gamer-summary-border{
   border-bottom:1px solid #e3e3e4;
   border-left:1px solid #e3e3e4;
@@ -627,9 +791,13 @@ form{
 }
 .saving-btn-pricing {
     padding-right: 0 !important;
-} 
+}
 .selectYourGame {
-    border: none;
+    padding:10px 10px;
+    border: 1px solid #e3e3e4;
+    border-radius:4px;
+    height:80px;
+    line-height:80px;
     /*appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;*/
@@ -694,12 +862,12 @@ form{
 .hero-header{
   font-size:55px;
   line-height:55px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .hero-select{
   font-size:45px;
   line-height:45px;
-  color:rgb(63,81,181);
+  color:#02b3e4;
 }
 .pDisplayInline{
   display:inline-block;
@@ -775,14 +943,14 @@ form{
   height:150px;
 }
 .padding-index{
-  padding-top:100px;
+  padding-top:80px;
 }
 .selection-height {
     width:100%;
     height: 100%;
 }
 .index-backgroundImage {
-    background-image: url("../images/index-backroundImage.png");
+    background-image: url("../images/index-backroundImage.JPG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center bottom, center center;
