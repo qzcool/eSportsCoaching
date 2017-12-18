@@ -1,8 +1,0 @@
-<ul id="menu" class="pull-right">
-    <li class="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right" id="personList">
-            <li><a href='signIn.html'>??</a></li>
-            <li><a href='signUp.html'>??</a></li>
-        </ul>
-    </li>
-</ul>
