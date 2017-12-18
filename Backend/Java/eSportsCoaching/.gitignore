@@ -77,4 +77,4 @@ hs_err_pid*
 .idea/
 eSportsCoaching.iml
 src/test/
-/target/
+target/
