@@ -1,12 +1,6 @@
-﻿var siderTextForSensei = {
-    '课程': ['我的课程', '我的评论', '免费课程'],
-    '钱包': ['账户余额', '交易记录'],
-    '首选项': ['个人信息', '账户设置','支付方式']
-};
-
 var courseList_text = ['我的课程', '我的评论', '免费课程'];
 var walletList_text = ['账户余额', '交易记录'];
-var preferenceList_text = ['个人信息', '账户设置','支付方式'];
+var preferenceList_text = ['个人信息', '账户设置'];
 
 var leftBar = document.getElementById('leftBar');
 
@@ -49,16 +43,13 @@ function init() {
     }
 
     var siderList3 = document.getElementById("siderList3");
-    siderList3.innerHTML = '<div class="col-xs-12"><span class="fa fa-cog fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="preferenceName" class="blueColor col-xs-10 course-title"></h4></div><ul id="preferenceList" class="siderList_text"><li class="listClick" id="profile"></li><li class="listClick" id="accountSetting"></li><li class="listClick" id="paymentOptions"></li></ul>';
+    siderList3.innerHTML = '<div class="col-xs-12"><span class="fa fa-cog fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="preferenceName" class="blueColor col-xs-10 course-title"></h4></div><ul id="preferenceList" class="siderList_text"><li class="listClick" id="profile"></li><li class="listClick" id="accountSetting"></li></ul>';
     document.getElementById("preferenceName").innerHTML = '首选项';
     document.getElementById("profile").onclick = function(){
       window.location.href = 'profile.html';
     };
     document.getElementById("accountSetting").onclick = function(){
       window.location.href = 'accountSetting.html';
-    };
-    document.getElementById("paymentOptions").onclick = function(){
-      window.location.href = 'paymentOptions.html';
     };
 
     var preferenceList_child = document.getElementById('preferenceList').children;
