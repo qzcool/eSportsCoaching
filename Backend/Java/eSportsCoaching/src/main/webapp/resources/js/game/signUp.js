@@ -18,17 +18,33 @@ eyeIcon.onclick = function () {
 };
 
 getVerifyCode.onclick = function () {
+    if(!checkUserInfo()){
+      return;
+    }
     getVerifyCode.value = count;
-    var flag = checkUserId();
     intervalFlag = setInterval(function () {
+        $("#getVerifyCode").attr("disabled", "true");
         count--;
         getVerifyCode.value = count;
         if (count === 0) {
             clearInterval(intervalFlag);
             getVerifyCode.value = '获取验证码';
             count = 60;
+            $("#getVerifyCode").attr("disabled", "false");
         }
     }, 1000);
+}
+
+function checkUserInfo(){
+    var userText = document.getElementById("userName").value;
+    var nickName = document.getElementById("nickName").value;
+    var userPwd = document.getElementById("userPwd").value;
+    if(userText === "" || nickName === "" || userPwd === ""){
+      alert("请输入正确个人信息");
+      return false;
+    }else{
+      return true;
+    }
 }
 
 /*verify user id*/

@@ -1,15 +1,4 @@
-﻿var gameNameOptions=["王者荣耀","英雄联盟","绝地求生"];
-var users = [{
-    name: "qxy",
-    pwd: "123456",
-    type: "STU"
-}, {
-    name: "yaya",
-    pwd: "123456",
-    type: "SEN"
-}];
-
-
+﻿
 /*check user name and user password in sign in*/
 function checkUserInfo(form){
     var username = document.getElementById("userName").value;

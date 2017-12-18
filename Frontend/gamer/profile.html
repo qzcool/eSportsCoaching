@@ -86,7 +86,7 @@
                                 <input type="file" onchange="selectImage(this);" style="display: none;" id="changeProfileFile" />
                                 <button class="buttonRadis buttonTochangeFile" id="changePorfileID" onclick="changeProfileFile.click();">更换头像</button>
                             </div>
-                            <form class="col-xs-8 formLeft">
+                            <form class="col-xs-8 formLeft" action="" method="post">
                                 <div class="profile-input-box blockStyle">
                                     <label for="userNameI" class="blockStyle">姓名</label>
                                     <input id="userNameI" class="profile-input"/>
@@ -108,6 +108,7 @@
                                     <label for="userNameII" class="blockStyle" >自我介绍</label>
                                     <input id="userNameII" class="profile-input-introduce"/>
                                 </div>
+                                <input class="button-signIn" type="submit" value = "更新">
                             </form>
                         </div>
                     </div>
