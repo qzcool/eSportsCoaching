@@ -80,6 +80,10 @@ form{
   color: #e09a22;
 }
 
+.marginDesign-senseiList{
+  margin-top:20px;
+}
+
 .nav-height{
     height:50px;
     padding-right:0 !important;
