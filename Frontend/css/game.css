@@ -74,6 +74,11 @@ form{
 
 .siderList_text{
   color:white;
+  margin-top:30px;
+}
+
+.sideTitle{
+  height:30px;
 }
 
 .player-name{
@@ -342,7 +347,7 @@ form{
 
 .listInfo, .index-left p {
     border-bottom: 1px solid #e3e3e4;
-    padding: 12px 0 8px 0;
+    padding: 12px 0 0 0;
 }
 /*course title in profile page*/
 .course-title {
@@ -374,6 +379,9 @@ form{
 .index-left li a,.index-left p a {
     text-decoration: none;
     color: #bdc4c8;
+}
+#leftBar p{
+  color:white;
 }
 .index-left {
     background: #0E1D4E;

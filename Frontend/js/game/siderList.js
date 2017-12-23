@@ -11,12 +11,12 @@ if(window.location.href.match(/\/sensei\//)){
 }
 
 function init() {
-    leftBar.innerHTML = '<div id="siderList1" class="listInfo"></div><div id="siderList2" class="listInfo"></div><div id="siderList3" class="listInfo"></div><p class="listClick siderList_text" id="logOff">注销</p>'
+    leftBar.innerHTML = '<div id="siderList1" class="listInfo"></div><div id="siderList2" class="listInfo"></div><div id="siderList3" class="listInfo"></div><p class="listClick" id="logOff">注销</p>'
     document.getElementById('logOff').onclick = function(){
       window.location.href = '../index.html';
     };
     var siderList1 = document.getElementById("siderList1");
-    siderList1.innerHTML = '<div class="col-xs-12"><span class="fa fa-calendar fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="courseName" class="blueColor col-xs-10 course-title"></h4></div><ul id="courseList" class="siderList_text"><li class="listClick" id="calender"></li><li class="listClick" id="myReviews"></li><li class="listClick" id="getFreeLessons" style="display:block"></li></ul>';
+    siderList1.innerHTML = '<div class="col-xs-12 sideTitle"><span class="fa fa-calendar fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="courseName" class="blueColor col-xs-10 course-title"></h4></div><ul id="courseList" class="siderList_text"><li class="listClick" id="calender"></li><li class="listClick" id="myReviews"></li><li class="listClick" id="getFreeLessons" style="display:block"></li></ul>';
     document.getElementById("courseName").innerHTML = '课程';
     document.getElementById("calender").onclick = function(){
       window.location.href = 'calender.html';
@@ -38,7 +38,7 @@ function init() {
     }
 
     var siderList2 = document.getElementById("siderList2");
-    siderList2.innerHTML = '<div class="col-xs-12"><span class="fa fa-credit-card fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="walletName" class="blueColor col-xs-10 course-title"></h4></div><ul id="walletList" class="siderList_text"><li class="listClick" id="summary"></li><li class="listClick" id="history"></li></ul>';
+    siderList2.innerHTML = '<div class="col-xs-12 sideTitle"><span class="fa fa-credit-card fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="walletName" class="blueColor col-xs-10 course-title"></h4></div><ul id="walletList" class="siderList_text"><li class="listClick" id="summary"></li><li class="listClick" id="history"></li></ul>';
     document.getElementById("walletName").innerHTML = '钱包';
     document.getElementById("summary").onclick = function(){
       window.location.href = 'summary.html';
@@ -53,7 +53,7 @@ function init() {
     }
 
     var siderList3 = document.getElementById("siderList3");
-    siderList3.innerHTML = '<div class="col-xs-12"><span class="fa fa-cog fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="preferenceName" class="blueColor col-xs-10 course-title"></h4></div><ul id="preferenceList" class="siderList_text"><li class="listClick" id="profile"></li><li class="listClick" id="accountSetting"></li><li class="listClick" id="pricing" style="display:none"></li><li class="listClick" id="timeTable" style="display:none"></li></ul>';
+    siderList3.innerHTML = '<div class="col-xs-12 sideTitle"><span class="fa fa-cog fa-2x icon-color-profile col-xs-2 course-title"></span><h4 id="preferenceName" class="blueColor col-xs-10 course-title"></h4></div><ul id="preferenceList" class="siderList_text"><li class="listClick" id="profile"></li><li class="listClick" id="accountSetting"></li><li class="listClick" id="pricing" style="display:none"></li><li class="listClick" id="timeTable" style="display:none"></li></ul>';
     document.getElementById("preferenceName").innerHTML = '首选项';
     document.getElementById("profile").onclick = function(){
       window.location.href = 'profile.html';
