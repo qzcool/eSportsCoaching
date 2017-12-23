@@ -76,6 +76,16 @@ function init() {
     for(var i = 0; i < preferenceList_child.length; i++){
       preferenceList_child[i].innerHTML = preferenceList_text[i];
     }
+    createNavigator();
+}
+
+function createNavigator(){
+   var navigator = document.getElementById('navigatorFor');
+   navigator.innerHTML = '<div class="col-xs-9"><div class="gameLogo"></div></div><div class="col-xs-3 nav-height"><ul id="menu"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" id="personalID">个人中心 <b class="caret"></b></a><ul class="dropdown-menu" id="personList"><li><a href="profile.html">用户信息</a></li><li><a href="searchSensei.html">寻找先生</a></li><li><a href="../index.html">注销</a></li></ul></li></ul></div>';
+   var navHtml = '<div class="col-xs-9"><div class="gameLogo"></div></div><div class="col-xs-3 nav-height"><ul id="menu" class="pull-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" id="personalID">个人中心<b class="caret"></b></a><ul class="dropdown-menu dropdown-menu-right" id="personList"><li><a>￥0.00</a></li><li><a href="profile.html">用户信息</a></li><li><a href="../index.html">注销</a></li></ul></li></ul></div>';
+   if(senseiFlag){
+      navigator.innerHTML = navHtml;
+   }
 }
 
 init();
