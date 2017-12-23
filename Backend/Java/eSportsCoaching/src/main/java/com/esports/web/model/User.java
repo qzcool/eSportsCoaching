@@ -1,11 +1,20 @@
 package com.esports.web.model;
 
 public class User {
+    private String userid;
     private String username;
     private String password;
     private int role;
     private String phone;
     private String email;
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
 
     public String getUsername() {
         return username;

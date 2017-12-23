@@ -4,8 +4,8 @@
 <mapper namespace="com.esports.web.dao.UserMapper">
 
     <insert id="insertUser" parameterType="com.esports.web.model.User">
-        insert into user (username,password,role,phone,email) values
-                          (#{username}, #{password}, #{role}, #{phone}, #{email})
+        insert into user (userid,username,password,role,phone,email) values
+                          (#{userid},#{username}, #{password}, #{role}, #{phone}, #{email})
     </insert>
 
     <select id="selectByName" parameterType="java.util.Map" resultType="com.esports.web.model.User">
