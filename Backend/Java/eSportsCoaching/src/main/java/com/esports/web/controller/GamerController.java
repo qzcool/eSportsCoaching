@@ -21,6 +21,8 @@ public class GamerController {
     public String updateProfile(HttpServletRequest request){
         User user = (User)request.getSession().getAttribute("user");
         UserProfile profile = new UserProfile();
+        profile.setUserid(user.getUserid());
+//        profile.setNickname();
        return null;
     }
 }

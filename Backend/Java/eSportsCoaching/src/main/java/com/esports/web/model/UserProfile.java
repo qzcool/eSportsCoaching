@@ -6,17 +6,17 @@ package com.esports.web.model;
  * Date: 2017/12/23
  */
 public class UserProfile {
-    private int userid;
+    private String userid;
     private String nickname;
     private String img;
     private String game_label;
     private String introduction;
 
-    public int getUserid() {
+    public String getUserid() {
         return userid;
     }
 
-    public void setUserid(int userid) {
+    public void setUserid(String userid) {
         this.userid = userid;
     }
 

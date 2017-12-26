@@ -51,22 +51,22 @@
                                 <input type="file" onchange="selectImage(this);" style="display: none;" id="changeProfileFile" />
                                 <button class="buttonRadis buttonTochangeFile" id="changePorfileID" onclick="changeProfileFile.click();">更换头像</button>
                             </div>
-                            <form class="col-xs-8 formLeft">
+                            <form class="col-xs-8 formLeft" action="/gamer/update/profile" method="post">
                                 <div class="profile-input-box blockStyle">
                                     <label for="userNameI" class="blockStyle">姓名</label>
-                                    <input id="userNameI" class="profile-input"/>
+                                    <input id="userNameI" class="profile-input" name="username"/>
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="screenNameI" class="blockStyle">屏幕名字</label>
-                                    <input id="screenNameI" class="profile-input"/>
+                                    <input id="screenNameI" class="profile-input" name="nickname"/>
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="gameNameI" class="blockStyle">游戏名字</label>
-                                    <input id="gameNameI" class="profile-input"/>
+                                    <input id="gameNameI" class="profile-input" name="gamelabel"/>
                                 </div>
                                 <div class="profile-input-introduce-box blockStyle">
                                     <label for="userNameII" class="blockStyle">自我介绍</label>
-                                    <input id="userNameII" class="profile-input-introduce"/>
+                                    <input id="userNameII" class="profile-input-introduce" name="introduction"/>
                                 </div>
                                 <input class="button-signIn" type="submit" value = "更新">
                             </form>
