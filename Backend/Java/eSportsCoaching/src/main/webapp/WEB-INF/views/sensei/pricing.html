@@ -18,31 +18,10 @@
     </script>
 </head>
 <body>
-    <div align="center">
-        <nav class="navbar navbar-default navbar-fixed-top m-b-n">
-            <div class="container-fluid">
-                <div class="col-xs-9">
-                    <div class="gameLogo"></div>
-                </div>
-                <div class="col-xs-3 nav-height">
-                    <ul id="menu" class="pull-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
-                                个人中心
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right" id="personList">
-                                <li><a href=''>￥0.00</a></li>
-                                <li><a href="profile.html">用户信息</a></li>
-                                <li><a href="../index.html">注销</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" id="navigatorFor">
         </nav>
-        <div class="container-fluid bg-img">
-            <div class="row">
+        <div class="row">
                 <div class="col-xs-2 index-left " id="leftBar">
                 </div>
                 <div class="col-xs-10 right-center">
@@ -63,9 +42,9 @@
                         <p class="search-list-view">输入你的课程费用信息</p>
                         <div class="col-xs-12 selectionInfo font-size-money">
                             <span class="text-left span-for-moneyIcon">￥</span>
-                            <input class="enter-input-info font-size-money" value="12.50"/>
-                            <button class="button-sep-plus">+</button>
-                            <button class="button-sep-minus">-</button>
+                            <input class="enter-input-info font-size-money" id="inputPricing" value="12.50"/>
+                            <button class="button-sep-plus" id="plusButton">+</button>
+                            <button class="button-sep-minus" id="minusButton">-</button>
                         </div>
                         <p class="text-left"><strong>你可以赚到：</strong>￥10.00/h</p>
                     </div>
@@ -145,7 +124,6 @@
         </div>
         <script language="JavaScript" src="/resources/js/game.js"></script>
         <script language="JavaScript" src="/resources/js/game/siderList.js"></script>
-    </div>
     </div>
 </body>
 </html>

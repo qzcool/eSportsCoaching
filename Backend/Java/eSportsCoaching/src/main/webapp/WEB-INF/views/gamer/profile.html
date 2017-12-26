@@ -12,31 +12,10 @@
     <script type="text/javascript" src="/resources/js/jquery-3.2.1.js"></script>
 </head>
 <body>
-    <div align="center">
-        <nav class="navbar navbar-default navbar-fixed-top m-b-n">
-            <div class="container-fluid">
-                <div class="col-xs-9">
-                    <div class="gameLogo"></div>
-                </div>
-                <div class="col-xs-3 nav-height">
-                    <ul id="menu">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
-                                个人中心
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu" id="personList">
-                                <li><a href="profile.html">用户信息</a></li>
-                                <li><a href='searchSensei.html'>寻找先生</a></li>
-                                <li><a href="../index.html">注销</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" id="navigatorFor">
         </nav>
-        <div class="container-fluid bg-img">
-            <div class="row">
+        <div class="row">
                 <div class="col-xs-2 index-left " id="leftBar">
                 </div>
                 <div class="col-xs-10 right-center">
@@ -51,22 +30,22 @@
                                 <input type="file" onchange="selectImage(this);" style="display: none;" id="changeProfileFile" />
                                 <button class="buttonRadis buttonTochangeFile" id="changePorfileID" onclick="changeProfileFile.click();">更换头像</button>
                             </div>
-                            <form class="col-xs-8 formLeft" action="/gamer/update/profile" method="post">
+                            <form class="col-xs-8 formLeft" method="post" action="/gamer/profile">
                                 <div class="profile-input-box blockStyle">
                                     <label for="userNameI" class="blockStyle">姓名</label>
-                                    <input id="userNameI" class="profile-input" name="username"/>
+                                    <input id="userNameI" class="profile-input" name="userName"/>
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="screenNameI" class="blockStyle">屏幕名字</label>
-                                    <input id="screenNameI" class="profile-input" name="nickname"/>
+                                    <input id="screenNameI" class="profile-input" name="screenName"/>
                                 </div>
                                 <div class="profile-input-box blockStyle">
                                     <label for="gameNameI" class="blockStyle">游戏名字</label>
-                                    <input id="gameNameI" class="profile-input" name="gamelabel"/>
+                                    <input id="gameNameI" class="profile-input" name="gameName"/>
                                 </div>
                                 <div class="profile-input-introduce-box blockStyle">
                                     <label for="userNameII" class="blockStyle">自我介绍</label>
-                                    <input id="userNameII" class="profile-input-introduce" name="introduction"/>
+                                    <input id="userNameII" class="profile-input-introduce" name="introduceSelf"/>
                                 </div>
                                 <input class="button-signIn" type="submit" value = "更新">
                             </form>
@@ -74,7 +53,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <script language="JavaScript" src="/resources/js/game.js"></script>
         <script language="JavaScript" src="/resources/js/game/siderList.js"></script>
     </div>

@@ -12,31 +12,10 @@
     <script type="text/javascript" src="/resources/js/jquery-3.2.1.js"></script>
 </head>
 <body>
-    <div align="center">
-        <nav class="navbar navbar-default navbar-fixed-top m-b-n">
-            <div class="container-fluid">
-                <div class="col-xs-9">
-                    <div class="gameLogo"></div>
-                </div>
-                <div class="col-xs-3 nav-height">
-                    <ul id="menu">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" id="personalID">
-                                个人中心
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu" id="personList">
-                                <li><a href="profile.html">用户信息</a></li>
-                                <li><a href='searchSensei.html'>寻找先生</a></li>
-                                <li><a href="../index.html">注销</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" id="navigatorFor">
         </nav>
-        <div class="container-fluid bg-img">
-            <div class="row">
+        <div class="row">
                 <div class="col-xs-2 index-left " id="leftBar">
                 </div>
                 <div class="col-xs-10 right-center">
@@ -46,10 +25,10 @@
                     <div class="selectionInfo col-xs-10">
                         <div class="selection-header"><h3> 个人信息</h3></div>
                         <div class="selection-body col-xs-12">
-                            <form class="col-xs-12 formLeft" action="">
+                            <form class="col-xs-12 formLeft" method="post" action="">
                                 <div class="profile-input-box blockStyle col-xs-12">
                                     <label for="emailNameI" class="blockStyle">邮件地址</label>
-                                    <input id="emailNameI" class="profile-input"/>
+                                    <input id="emailNameI" class="profile-input" name="emailAddress"/>
                                 </div>
                                 <div class="profile-input-box blockStyle col-xs-4">
                                     <label for="serviceNameI" class="blockStyle">服务</label>
@@ -61,19 +40,18 @@
                                 </div>
                                 <div class="profile-input-box blockStyle col-xs-4">
                                     <label for="accoutNameI" class="blockStyle">用户名</label>
-                                    <input id="accoutNameI" class="profile-input"/>
+                                    <input id="accoutNameI" class="profile-input" name="userName"/>
                                 </div>
                                 <div class="profile-input-box blockStyle col-xs-4">
                                     <label for="userNameII" class="blockStyle">电话号码</label>
-                                    <input id="userNameII" class="profile-input"/>
+                                    <input id="userNameII" class="profile-input" name="phoneNum"/>
                                 </div>
-                                <input class="btn btn-info pull-right"  type="submit">更新设置</input>
+                                <input type="submit" class="btn btn-info pull-right" value="更新设置"/>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <script language="JavaScript" src="/resources/js/game.js"></script>
         <script language="JavaScript" src="/resources/js/game/siderList.js"></script>
     </div>
