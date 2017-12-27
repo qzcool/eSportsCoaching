@@ -2,6 +2,7 @@ package com.esports.web.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.esports.constant.RegExConstant;
+import com.esports.util.UUIDGenerator;
 import com.esports.web.model.User;
 import com.esports.web.service.impl.IdentifyCodeServiceImpl;
 import com.esports.web.service.impl.UserServiceImpl;
@@ -72,6 +73,7 @@ public class AccountController {
         String username = request.getParameter("username");
         String identifyCode = request.getParameter("code");
         User user = new User();
+        user.setUserid(UUIDGenerator.generateUserId());
         user.setUsername(nickName);
         user.setRole(Integer.parseInt(role));
         user.setPassword(password);
