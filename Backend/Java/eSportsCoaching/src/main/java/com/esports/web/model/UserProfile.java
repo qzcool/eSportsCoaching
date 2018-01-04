@@ -9,7 +9,7 @@ public class UserProfile {
     private String userid;
     private String nickname;
     private String img;
-    private String game_label;
+    private String gameLabel;
     private String introduction;
 
     public String getUserid() {
@@ -36,12 +36,12 @@ public class UserProfile {
         this.img = img;
     }
 
-    public String getGame_label() {
-        return game_label;
+    public String getGameLabel() {
+        return gameLabel;
     }
 
-    public void setGame_label(String game_label) {
-        this.game_label = game_label;
+    public void setGameLabel(String gameLabel) {
+        this.gameLabel = gameLabel;
     }
 
     public String getIntroduction() {
