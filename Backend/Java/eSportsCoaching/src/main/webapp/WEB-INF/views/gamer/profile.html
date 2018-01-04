@@ -30,7 +30,7 @@
                                 <input type="file" onchange="selectImage(this);" style="display: none;" id="changeProfileFile" />
                                 <button class="buttonRadis buttonTochangeFile" id="changePorfileID" onclick="changeProfileFile.click();">更换头像</button>
                             </div>
-                            <form class="col-xs-8 formLeft" method="post" action="/gamer/profile">
+                            <form class="col-xs-8 formLeft" method="post" action="/user/gamer/profile">
                                 <div class="profile-input-box blockStyle">
                                     <label for="userNameI" class="blockStyle">姓名</label>
                                     <input id="userNameI" class="profile-input" name="userName"/>
@@ -55,6 +55,7 @@
             </div>
         <script language="JavaScript" src="/resources/js/game.js"></script>
         <script language="JavaScript" src="/resources/js/game/siderList.js"></script>
+        <script language="JavaScript" src="/resources/js/game/profile.js"></script>
     </div>
 </body>
 </html>

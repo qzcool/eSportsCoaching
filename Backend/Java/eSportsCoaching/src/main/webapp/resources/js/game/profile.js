@@ -10,4 +10,6 @@ function showOrHide() {
         gameList.style.display = 'block';
         disable = true;
     }
-} 
+}
+
+document.getElementById('userNameI').value = {user};
