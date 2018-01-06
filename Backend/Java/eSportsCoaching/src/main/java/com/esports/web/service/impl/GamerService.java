@@ -21,6 +21,6 @@ public class GamerService implements IGamerService{
 
     @Override
     public void updateProfile(UserProfile profile) {
-
+        gamerMapper.updateProfile(profile);
     }
 }

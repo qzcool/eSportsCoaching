@@ -17,13 +17,16 @@ public class UserController {
 
     @RequestMapping("/gamer/profile")
     public String gamerProfile(HttpServletRequest request){
-        System.out.println((User)request.getSession().getAttribute("user"));
         return "forward:/views/gamer/profile.html";
+    }
+
+    @RequestMapping("/gamer/calender")
+    public String gamerCalender(HttpServletRequest request){
+        return "forward:/views/gamer/calender.html";
     }
 
     @RequestMapping("/sensei/profile")
     public String senseiProfile(HttpServletRequest request){
-        System.out.println((User)request.getSession().getAttribute("user"));
         return "forward:/views/sensei/profile.html";
     }
 }

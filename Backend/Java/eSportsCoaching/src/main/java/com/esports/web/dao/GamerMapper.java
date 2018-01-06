@@ -1,5 +1,7 @@
 package com.esports.web.dao;
 
+import com.esports.web.model.UserProfile;
+
 import java.util.Map;
 
 /**
@@ -8,5 +10,5 @@ import java.util.Map;
  * Date: 2018/01/02
  */
 public interface GamerMapper {
-    void updateProfile(Map<String,Object> params);
+    void updateProfile(UserProfile profile);
 }

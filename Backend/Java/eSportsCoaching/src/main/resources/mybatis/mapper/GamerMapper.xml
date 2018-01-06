@@ -3,9 +3,8 @@
 
 <mapper namespace="com.esports.web.dao.GamerMapper">
 
-    <insert id="insertUser" parameterType="com.esports.web.model.UserProfile">
-        insert into user_profile (userid,nickname,img,game_label,introduction) values (#{userid},#{nickname}, #{img}, #{gameLabel}, #{introduction})
-         on duplicate key update update_time = now()
+    <insert id="updateProfile" parameterType="com.esports.web.model.UserProfile">
+        replace into user_profile (userid,nickname,img,game_label,introduction) values (#{userid},#{nickname}, #{img}, #{gameLabel}, #{introduction});
     </insert>
 
 </mapper>
