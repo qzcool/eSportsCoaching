@@ -55,9 +55,9 @@ public class AccountController {
             int role = user.getRole();
             String redirectPath = "redirect:/index";
             if (role == 1) {
-                redirectPath = "redirect:/user/gamer/profile";
+                redirectPath = "redirect:/gamer/profile";
             } else if (role == 2) {
-                redirectPath = "redirect:/user/sensei/profile";
+                redirectPath = "redirect:/sensei/profile";
             }
             return redirectPath;
         } else {
