@@ -43,6 +43,9 @@ form{
     background-color:rgb(255,255,255);
 }
 
+#leftBar li{
+  text-align:center !important;
+}
 
 .navbar a{
   color:#333;
@@ -353,6 +356,7 @@ form{
 .course-title {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    text-align:center !important;
 }
 
 .sensei-profile-div {
@@ -382,6 +386,7 @@ form{
 }
 #leftBar p{
   color:white;
+  text-align:center;
 }
 .index-left {
     background: #0E1D4E;
@@ -762,6 +767,7 @@ form{
 .profileStyle{
   width:150px;
   height:150px;
+  border-radius:50%;
 }
 .userProfileStyle{
   width:210px;

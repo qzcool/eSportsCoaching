@@ -11,5 +11,3 @@ function showOrHide() {
         disable = true;
     }
 }
-
-document.getElementById('userNameI').value = {user};
